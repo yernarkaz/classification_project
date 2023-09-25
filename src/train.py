@@ -5,6 +5,8 @@ import numpy as np
 import pickle
 
 import dvc.api
+import mlflow
+import mlflow.sklearn
 from pathlib import Path
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
@@ -46,7 +48,7 @@ def train_model_pipeline(params, model, train_data, tags):
         ('clf', model)
     ])
     
-    for tag in tqdm(tags[:5]):
+    for tag in tqdm(tags):
         train = train_data[tag]
         X_train, y_train = np.array([vec for vec in train.sentence_embeddings.values]), train[tag]  
         model_pipeline.fit(X_train, y_train)
@@ -74,9 +76,12 @@ def main(repo_path):
     """
 
     print("repo_path:", repo_path)
-    params = dvc.api.params_show(stages="train")
+    params = dvc.api.params_show(stages=["preprocess", "train"])
     print("params:")
     print(params)
+
+    print("Seeding random...")
+    np.random.seed(params["seed"])
 
     print("Loading tags...")
     tags = np.load(repo_path / params["tags_path"])
@@ -86,11 +91,27 @@ def main(repo_path):
     for tag in tqdm(tags):
         train_data[tag] = pd.read_parquet(repo_path / params["train_path"] / f"{tag.replace('/', '_')}")
 
-    print("Training model pipelines...")
-    model_pipelines = {}
-    for model_name in params["models"]:
-        model = get_model(model_name)
-        model_pipelines[model_name] = train_model_pipeline(params, model, train_data, tags)
+    
+    experiment = mlflow.set_experiment(params["experiment_name"])
+
+    with mlflow.start_run(experiment_id=experiment.experiment_id, run_name="training"):
+        mlflow.log_param("seed", params["seed"])
+        mlflow.log_param("data_version", params["data_version"])
+        mlflow.log_param("account_ids", params["account_ids"])
+        mlflow.log_param("embedding_pooling_type", params["embedding_pooling_type"])
+        mlflow.log_param("preprocess_type", params["preprocess_type"])
+
+        print("Training model pipelines...")
+        model_pipelines = {}
+        for model_name in params["models"]:
+
+            print("Training model:", model_name)
+            with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=model_name, nested=True):
+                mlflow.log_param("model", model_name)
+                mlflow.log_param("pca_n_components", params["pca_n_components"])
+
+                model = get_model(model_name)
+                model_pipelines[model_name] = train_model_pipeline(params, model, train_data, tags)
 
     print("Saving model pipelines...")
     save_model(repo_path, params, model_pipelines)

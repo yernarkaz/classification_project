@@ -22,8 +22,14 @@ stages:
       - src/train.py
       - data/tags.npy
     params:
-      - train.yaml:
+      - preprocess.yaml:
         - seed
+        - data_version
+        - account_ids
+        - embedding_pooling_type
+        - preprocess_type
+      - train.yaml:
+        - experiment_name
         - train_path
         - tags_path
         - pca_n_components
@@ -37,11 +43,20 @@ stages:
       - src/evaluate.py
       - data/model_pipelines.pkl
     params:
+      - preprocess.yaml:
+        - seed
+        - data_version
+        - account_ids
+        - embedding_pooling_type
+        - preprocess_type
       - train.yaml:
+        - experiment_name
+        - pca_n_components
         - models
       - evaluate.yaml:
         - test_path
         - model_path
         - result_path
+        - result_path_track
     outs:
-      - results/model_pipeline_performance_results.csv
+      - data/model_pipeline_performance_results.csv

@@ -1,4 +1,4 @@
-seed: 42 # random state for reproducing experiments
+experiment_name: 'classificaton_project' # name of the experiment to keep track in MLFlow UI
 train_path: 'data/train' # path to train data
 tags_path: 'data/tags.npy' # path to tags
 pca_n_components: 120 # number of components for PCA to reduce the dimensionality of sentence embeddings. 

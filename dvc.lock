@@ -1,0 +1,95 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 src/preprocess.py
+    deps:
+    - path: src/preprocess.py
+      hash: md5
+      md5: 4d9a1936101bde63c6eb0e731aae251d
+      size: 3157
+    params:
+      preprocess.yaml:
+        account_ids:
+        - '49143'
+        data_columns:
+        - account_id
+        - contact_reason
+        - email_sentence_embeddings
+        data_path: data/classification_dataset
+        data_version: v1
+        embedding_pooling_type: mean
+        preprocess_type: single
+        seed: 42
+        target_label: contact_reason
+    outs:
+    - path: data/tags.npy
+      hash: md5
+      md5: b7c65bdf5393e603cf7d54259a1297c5
+      size: 11288
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - path: data/tags.npy
+      hash: md5
+      md5: b7c65bdf5393e603cf7d54259a1297c5
+      size: 11288
+    - path: src/train.py
+      hash: md5
+      md5: 5179f2639b631d4003308fec4b9f583f
+      size: 3638
+    params:
+      preprocess.yaml:
+        account_ids:
+        - '49143'
+        data_version: v1
+        embedding_pooling_type: mean
+        preprocess_type: single
+        seed: 42
+      train.yaml:
+        experiment_name: classificaton_project
+        models:
+        - LogisticRegression
+        - SVC
+        pca_n_components: 120
+        tags_path: data/tags.npy
+        train_path: data/train
+    outs:
+    - path: data/model_pipelines.pkl
+      hash: md5
+      md5: cc7f748b51f1601f036a8613d7746933
+      size: 3378209
+  evaluate:
+    cmd: python3 src/evaluate.py
+    deps:
+    - path: data/model_pipelines.pkl
+      hash: md5
+      md5: cc7f748b51f1601f036a8613d7746933
+      size: 3378209
+    - path: src/evaluate.py
+      hash: md5
+      md5: 3b81edfa0cde073172947875465a09ad
+      size: 4244
+    params:
+      evaluate.yaml:
+        model_path: data/model_pipelines.pkl
+        result_path: data/model_pipeline_performance_results.csv
+        result_path_track: results/model_pipeline_performance_results.csv
+        test_path: data/test
+      preprocess.yaml:
+        account_ids:
+        - '49143'
+        data_version: v1
+        embedding_pooling_type: mean
+        preprocess_type: single
+        seed: 42
+      train.yaml:
+        experiment_name: classificaton_project
+        models:
+        - LogisticRegression
+        - SVC
+        pca_n_components: 120
+    outs:
+    - path: data/model_pipeline_performance_results.csv
+      hash: md5
+      md5: e51c3f3384691bfb59af72627bf1da23
+      size: 19587
