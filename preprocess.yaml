@@ -1,0 +1,12 @@
+seed: 42 # random state for reproducing experiments
+data_path: 'data/classification_dataset'
+data_version: "v1" # version of the 
+data_columns: # list of columns
+  - account_id 
+  - contact_reason
+  - email_sentence_embeddings 
+target_label: "contact_reason"
+account_ids: # list of account ids
+  - '49143' 
+embedding_pooling_type: 'mean' # mean | max pooling
+preprocess_type: 'single' # single | batch

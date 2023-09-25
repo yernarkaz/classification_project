@@ -1,0 +1,8 @@
+seed: 42 # random state for reproducing experiments
+train_path: 'data/train' # path to train data
+tags_path: 'data/tags.npy' # path to tags
+pca_n_components: 120 # number of components for PCA to reduce the dimensionality of sentence embeddings. 
+                      # recommendations to choose n preserving at least 80% of variance for sentence embeddings.
+models: # Models of interest for training and evaluation.
+  - LogisticRegression
+  - SVC
