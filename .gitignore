@@ -167,7 +167,7 @@ cython_debug/
 .ipynb_checkpoints
 
 # input data
-data/classification_dataset
+data/
 
 # MLFlow local runs
 mlruns/

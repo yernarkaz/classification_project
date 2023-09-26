@@ -4,31 +4,32 @@ stages:
     deps:
       - src/preprocess.py
     params:
-      - preprocess.yaml:
+      - config/preprocess.yaml:
         - seed
         - data_version
         - data_path
         - data_columns
-        - target_label
+        - target_name
+        - min_tag_cnt
         - account_ids
         - embedding_pooling_type
-        - preprocess_type
     outs:
-      - data/tags.npy
+      - data/selected_tags.pkl
 
   train:
     cmd: python3 src/train.py
     deps:
       - src/train.py
-      - data/tags.npy
+      - data/selected_tags.pkl
     params:
-      - preprocess.yaml:
+      - config/preprocess.yaml:
         - seed
-        - data_version
         - account_ids
+        - data_version
+        - target_name
+        - min_tag_cnt
         - embedding_pooling_type
-        - preprocess_type
-      - train.yaml:
+      - config/train.yaml:
         - experiment_name
         - train_path
         - tags_path
@@ -43,17 +44,12 @@ stages:
       - src/evaluate.py
       - data/model_pipelines.pkl
     params:
-      - preprocess.yaml:
+      - config/preprocess.yaml:
         - seed
-        - data_version
         - account_ids
-        - embedding_pooling_type
-        - preprocess_type
-      - train.yaml:
+      - config/train.yaml:
         - experiment_name
-        - pca_n_components
-        - models
-      - evaluate.yaml:
+      - config/evaluate.yaml:
         - test_path
         - model_path
         - result_path

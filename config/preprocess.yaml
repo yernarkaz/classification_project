@@ -5,8 +5,17 @@ data_columns: # list of columns
   - account_id 
   - contact_reason
   - email_sentence_embeddings 
-target_label: "contact_reason"
+target_name: "contact_reason"
+min_tag_cnt: 10
 account_ids: # list of account ids
   - '49143' 
+  - '23777'
+  - '4453'
+  - '81813'
+  - '89195'
+  - '12167'
+  - '23353'
+  - '62537'
+  - '47355'
+  - '65210'
 embedding_pooling_type: 'mean' # mean | max pooling
-preprocess_type: 'single' # single | batch

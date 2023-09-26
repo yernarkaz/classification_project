@@ -10,53 +10,48 @@ import mlflow.sklearn
 from pathlib import Path
 from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
 from tqdm import tqdm
 
 import warnings
 warnings.filterwarnings("ignore")
 
 
-
-def inference_and_evaluate(experiment, params, model_pipeline, test_data, tags, model_name):
+def inference_and_evaluate(params, account_id, model_pipeline, test, model_name):
     """
     Evaluate the model pipeline on the test set
-    :param experiment: evalution experiment
     :param params: params for model training
     :param model_pipeline: the model pipeline to evaluate
-    :param test_data: the test data
-    :param tags: the tags of interest
+    :param test: the test data
     :param model_name: the name of the model
     :return: None
     """
     
-    result_list = []
-    
-    for tag in tqdm(tags):
-        with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=f"tag: {str(tag)}", nested=True):
+    X_test, y_test = np.array([vec for vec in test.sentence_embeddings.values]), test[params['target_name']]
+    y_pred = model_pipeline.predict(X_test)
 
-            test = test_data[tag]
-            X_test, y_test = np.array([vec for vec in test.sentence_embeddings.values]), test[tag]
-            y_pred = model_pipeline.predict(X_test)
+    f1_micro_score = f1_score(y_test, y_pred, average='micro')
+    f1_macro_score = f1_score(y_test, y_pred, average='macro')
+    f1_weighted_score = f1_score(y_test, y_pred, average='weighted')
+    pr_score = precision_score(y_test, y_pred, average='weighted')
+    rec_score = recall_score(y_test, y_pred, average='weighted')
 
-            f1__score = f1_score(y_test, y_pred)
-            pr_score = precision_score(y_test, y_pred)
-            rec_score = recall_score(y_test, y_pred)
+    mlflow.log_metric("f1_micro_score", f1_micro_score)
+    mlflow.log_metric("f1_macro_score", f1_macro_score)
+    mlflow.log_metric("f1_weighted_score", f1_weighted_score)
+    mlflow.log_metric("precision_score", pr_score)
+    mlflow.log_metric("recall_score", rec_score)
 
-            mlflow.log_metric("f1_score", f1__score)
-            mlflow.log_metric("precision_score", pr_score)
-            mlflow.log_metric("recall_score", rec_score)
-            
-            result_list.append({
-                "account_ids": ','.join(params["account_ids"]),
-                "model_name": model_name,
-                "tag": tag,
-                "f1_score": f1__score,
-                "precision": pr_score,
-                "recall": rec_score
-            })
-
-    return pd.DataFrame(result_list)
+    return {
+        "account_id": account_id,
+        "model_name": model_name,
+        "f1_micro_score": f1_micro_score,
+        "f1_macro_score": f1_macro_score,
+        "f1_weighted_score": f1_weighted_score,
+        "precision": pr_score,
+        "recall": rec_score,
+        "classification_report": classification_report(y_test, y_pred)
+    }
 
 
 def load_model(repo_path, params):
@@ -89,18 +84,12 @@ def main(repo_path):
     :return: None
     """
 
-    print("repo_path:", repo_path)
     params = dvc.api.params_show(stages=["train", "evaluate"])
-    print("params:")
-    print(params)
-
-    print("Loading tags...")
-    tags = np.load(repo_path / params["tags_path"])
 
     print("Loading test data...")
     test_data = {}
-    for tag in tqdm(tags):
-        test_data[tag] = pd.read_parquet(repo_path / params["test_path"] / f"{tag.replace('/', '_')}")
+    for account_id in tqdm(params['account_ids']):
+        test_data[account_id] = pd.read_parquet(repo_path / f"{params['test_path']}_{account_id}")
 
     print("Loading model pipelines...")
     model_pipelines = load_model(repo_path, params)
@@ -110,24 +99,20 @@ def main(repo_path):
     print("Inference model pipelines...")
     result_list = []
 
-    for model_name in params["models"]:
-        print("Inference model:", model_name)
-        with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=f"Evaluation of {model_name}"):
+    with mlflow.start_run(experiment_id=experiment.experiment_id, run_name="evaluating"):
+        for account_id, test in tqdm(test_data.items()):
 
-            mlflow.log_param("seed", params["seed"])
-            mlflow.log_param("data_version", params["data_version"])
-            mlflow.log_param("account_ids", params["account_ids"])
-            mlflow.log_param("embedding_pooling_type", params["embedding_pooling_type"])
-            mlflow.log_param("preprocess_type", params["preprocess_type"])
-            mlflow.log_param("model", model_name)
-            mlflow.log_param("pca_n_components", params["pca_n_components"])
-            
-            result_list.append(
-                inference_and_evaluate(experiment, params, model_pipelines[model_name], test_data, tags, model_name)
-            )
+            for model_name in params["models"]:
+
+                print("Inference model:", model_name)
+
+                with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=f"{model_name}_{account_id}", nested=True):
+                    
+                    res = inference_and_evaluate(params, account_id, model_pipelines[account_id][model_name], test, model_name)
+                    result_list.append(res)
 
     print("Saving results...")
-    save_results(repo_path, params, pd.concat(result_list))
+    save_results(repo_path, params, pd.DataFrame(result_list))
 
 
 if __name__ == "__main__":

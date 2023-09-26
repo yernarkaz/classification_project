@@ -26,20 +26,16 @@ def get_model(model_name):
     elif model_name == "SVC":
         from sklearn.svm import SVC
         return SVC()
-    elif model_name == "RandomForestClassifier":
-        from sklearn.ensemble import RandomForestClassifier
-        return RandomForestClassifier()
     else:
         raise ValueError(f"Model {model_name} not found")
 
 
-def train_model_pipeline(params, model, train_data, tags):
+def train_model_pipeline(params, model, train):
     """
     Train the model
     :param params: params for model training
     :param model: ML model of interest
     :param train: train data
-    :param tags: tags of interest for model training
     :return: model pipeline
     """
 
@@ -48,10 +44,8 @@ def train_model_pipeline(params, model, train_data, tags):
         ('clf', model)
     ])
     
-    for tag in tqdm(tags):
-        train = train_data[tag]
-        X_train, y_train = np.array([vec for vec in train.sentence_embeddings.values]), train[tag]  
-        model_pipeline.fit(X_train, y_train)
+    X_train, y_train = np.array([vec for vec in train.sentence_embeddings.values]), train[params['target_name']]  
+    model_pipeline.fit(X_train, y_train)
 
     return model_pipeline
 
@@ -66,6 +60,7 @@ def save_model(repo_path, params, model_pipelines):
     """
 
     pickle.dump(model_pipelines, open(repo_path / f"data/model_pipelines.pkl", "wb"))
+    pickle.dump(model_pipelines, open(repo_path / f"results/models/model_pipelines.pkl", "wb"))
 
 
 def main(repo_path):
@@ -75,43 +70,43 @@ def main(repo_path):
     :return: None
     """
 
-    print("repo_path:", repo_path)
     params = dvc.api.params_show(stages=["preprocess", "train"])
-    print("params:")
-    print(params)
 
     print("Seeding random...")
     np.random.seed(params["seed"])
 
     print("Loading tags...")
-    tags = np.load(repo_path / params["tags_path"])
+    selected_tags = pickle.load(open(repo_path / params["tags_path"], 'rb'))
 
     print("Loading train data...")
     train_data = {}
-    for tag in tqdm(tags):
-        train_data[tag] = pd.read_parquet(repo_path / params["train_path"] / f"{tag.replace('/', '_')}")
-
+    for account_id in tqdm(params['account_ids']):
+        train_data[account_id] = pd.read_parquet(repo_path / f"{params['train_path']}_{account_id}")
     
     experiment = mlflow.set_experiment(params["experiment_name"])
 
     with mlflow.start_run(experiment_id=experiment.experiment_id, run_name="training"):
         mlflow.log_param("seed", params["seed"])
         mlflow.log_param("data_version", params["data_version"])
-        mlflow.log_param("account_ids", params["account_ids"])
+        mlflow.log_param("min_tag_cnt", params["min_tag_cnt"])
         mlflow.log_param("embedding_pooling_type", params["embedding_pooling_type"])
-        mlflow.log_param("preprocess_type", params["preprocess_type"])
-
-        print("Training model pipelines...")
+        
         model_pipelines = {}
-        for model_name in params["models"]:
 
-            print("Training model:", model_name)
-            with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=model_name, nested=True):
-                mlflow.log_param("model", model_name)
-                mlflow.log_param("pca_n_components", params["pca_n_components"])
+        for account_id, train in tqdm(train_data.items()):
 
-                model = get_model(model_name)
-                model_pipelines[model_name] = train_model_pipeline(params, model, train_data, tags)
+            print(f"Training model pipelines for merchant: {account_id}...")
+            model_pipelines[account_id] = {}
+
+            for model_name in params["models"]:
+
+                print("Training model:", model_name)
+
+                with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=f"{model_name}_{account_id}", nested=True):
+                    mlflow.log_param("pca_n_components", params["pca_n_components"])
+
+                    model = get_model(model_name)
+                    model_pipelines[account_id][model_name] = train_model_pipeline(params, model, train)
 
     print("Saving model pipelines...")
     save_model(repo_path, params, model_pipelines)

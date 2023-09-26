@@ -5,12 +5,21 @@ stages:
     deps:
     - path: src/preprocess.py
       hash: md5
-      md5: 4d9a1936101bde63c6eb0e731aae251d
-      size: 3157
+      md5: 03d8a24389e04e02031af2ceff48ac4e
+      size: 4319
     params:
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         data_columns:
         - account_id
         - contact_reason
@@ -18,78 +27,90 @@ stages:
         data_path: data/classification_dataset
         data_version: v1
         embedding_pooling_type: mean
-        preprocess_type: single
+        min_tag_cnt: 10
         seed: 42
-        target_label: contact_reason
+        target_name: contact_reason
     outs:
-    - path: data/tags.npy
+    - path: data/selected_tags.pkl
       hash: md5
-      md5: b7c65bdf5393e603cf7d54259a1297c5
-      size: 11288
+      md5: a49de203835aa898299f88573e77a04e
+      size: 9567
   train:
     cmd: python3 src/train.py
     deps:
-    - path: data/tags.npy
+    - path: data/selected_tags.pkl
       hash: md5
-      md5: b7c65bdf5393e603cf7d54259a1297c5
-      size: 11288
+      md5: a49de203835aa898299f88573e77a04e
+      size: 9567
     - path: src/train.py
       hash: md5
-      md5: 5179f2639b631d4003308fec4b9f583f
-      size: 3638
+      md5: 482f38d61ffc2a93b827271a26a64e33
+      size: 3508
     params:
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         data_version: v1
         embedding_pooling_type: mean
-        preprocess_type: single
+        min_tag_cnt: 10
         seed: 42
-      train.yaml:
+        target_name: contact_reason
+      config/train.yaml:
         experiment_name: classificaton_project
         models:
         - LogisticRegression
         - SVC
         pca_n_components: 120
-        tags_path: data/tags.npy
+        tags_path: data/selected_tags.pkl
         train_path: data/train
     outs:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: cc7f748b51f1601f036a8613d7746933
-      size: 3378209
+      md5: 5fb994113e4bbc02cf18a435a630f942
+      size: 36952698
   evaluate:
     cmd: python3 src/evaluate.py
     deps:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: cc7f748b51f1601f036a8613d7746933
-      size: 3378209
+      md5: 5fb994113e4bbc02cf18a435a630f942
+      size: 36952698
     - path: src/evaluate.py
       hash: md5
-      md5: 3b81edfa0cde073172947875465a09ad
-      size: 4244
+      md5: c6a7eb87352297f6a9edb4ae88b8c0ad
+      size: 3837
     params:
-      evaluate.yaml:
+      config/evaluate.yaml:
         model_path: data/model_pipelines.pkl
         result_path: data/model_pipeline_performance_results.csv
         result_path_track: results/model_pipeline_performance_results.csv
         test_path: data/test
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
-        data_version: v1
-        embedding_pooling_type: mean
-        preprocess_type: single
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         seed: 42
-      train.yaml:
+      config/train.yaml:
         experiment_name: classificaton_project
-        models:
-        - LogisticRegression
-        - SVC
-        pca_n_components: 120
     outs:
     - path: data/model_pipeline_performance_results.csv
       hash: md5
-      md5: e51c3f3384691bfb59af72627bf1da23
-      size: 19587
+      md5: 14717422c90173e767625f0addca2fd5
+      size: 63176
