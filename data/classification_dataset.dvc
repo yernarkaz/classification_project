@@ -1,0 +1,5 @@
+outs:
+- md5: d83fb2ef8a2e672a8de9cd57532d7266
+  size: 714355251
+  hash: md5
+  path: classification_dataset

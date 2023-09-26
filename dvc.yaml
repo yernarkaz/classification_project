@@ -1,0 +1,62 @@
+stages:
+  preprocess:
+    cmd: python3 src/preprocess.py
+    deps:
+      - src/preprocess.py
+    params:
+      - preprocess.yaml:
+        - seed
+        - data_version
+        - data_path
+        - data_columns
+        - target_label
+        - account_ids
+        - embedding_pooling_type
+        - preprocess_type
+    outs:
+      - data/tags.npy
+
+  train:
+    cmd: python3 src/train.py
+    deps:
+      - src/train.py
+      - data/tags.npy
+    params:
+      - preprocess.yaml:
+        - seed
+        - data_version
+        - account_ids
+        - embedding_pooling_type
+        - preprocess_type
+      - train.yaml:
+        - experiment_name
+        - train_path
+        - tags_path
+        - pca_n_components
+        - models
+    outs:
+      - data/model_pipelines.pkl
+
+  evaluate:
+    cmd: python3 src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - data/model_pipelines.pkl
+    params:
+      - preprocess.yaml:
+        - seed
+        - data_version
+        - account_ids
+        - embedding_pooling_type
+        - preprocess_type
+      - train.yaml:
+        - experiment_name
+        - pca_n_components
+        - models
+      - evaluate.yaml:
+        - test_path
+        - model_path
+        - result_path
+        - result_path_track
+    outs:
+      - data/model_pipeline_performance_results.csv

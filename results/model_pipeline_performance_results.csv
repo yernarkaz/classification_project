@@ -1,0 +1,249 @@
+account_ids,model_name,tag,f1_score,precision,recall
+"49143,49143",LogisticRegression,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.021739130434782605,0.012345679012345678,0.09090909090909091
+"49143,49143",LogisticRegression,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Cancellation::Full Order""",0.018348623853211007,0.014084507042253521,0.02631578947368421
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Poor On Arrival""",0.07785888077858881,0.18604651162790697,0.04923076923076923
+"49143,49143",LogisticRegression,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Auto Reply""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Poor On Arrival""",0.019417475728155338,0.011494252873563218,0.0625
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Positive Feedback""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Delay Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Spam""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Payment/Refund Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Delay Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Quote""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Reviews::General Feedback""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Product Information::Aftersales""",0.04733727810650888,0.04395604395604396,0.05128205128205128
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Order Amend""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Plant & Advise""",0.12987012987012989,0.11494252873563218,0.14925373134328357
+"49143,49143",LogisticRegression,"""Update Customer Information""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""No Response Needed (Triage)""",0.023121387283236997,0.02631578947368421,0.020618556701030927
+"49143,49143",LogisticRegression,"""IT Ticket""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Order Amend""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Question::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Plant & Advise""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Failed After Planting""",0.09174311926605505,0.05555555555555555,0.2631578947368421
+"49143,49143",LogisticRegression,"""WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Bedding""",0.01680672268907563,0.0125,0.02564102564102564
+"49143,49143",LogisticRegression,"""Question::Aftersales""",0.017241379310344827,0.011904761904761904,0.03125
+"49143,49143",LogisticRegression,"""WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Failed After Planting""",0.2621951219512195,0.5180722891566265,0.17551020408163265
+"49143,49143",SVC,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Poor On Arrival""",0.018957345971563982,0.041237113402061855,0.012307692307692308
+"49143,49143",SVC,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",SVC,"""Auto Reply""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Poor On Arrival""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",SVC,"""Positive Feedback""",0.0,0.0,0.0
+"49143,49143",SVC,"""Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Delay Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Spam""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",SVC,"""Payment/Refund Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
+"49143,49143",SVC,"""Delay Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Quote""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",SVC,"""Reviews::General Feedback""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",SVC,"""Product Information::Aftersales""",0.02259887005649718,0.020202020202020204,0.02564102564102564
+"49143,49143",SVC,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Order Amend""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Plant & Advise""",0.026315789473684206,0.023529411764705882,0.029850746268656716
+"49143,49143",SVC,"""Update Customer Information""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wrong Item::Flowered Incorrectly""",0.017543859649122806,0.010526315789473684,0.05263157894736842
+"49143,49143",SVC,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
+"49143,49143",SVC,"""No Response Needed (Triage)""",0.010309278350515464,0.010309278350515464,0.010309278350515464
+"49143,49143",SVC,"""IT Ticket""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",SVC,"""Order Amend""",0.0,0.0,0.0
+"49143,49143",SVC,"""Question::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Plant & Advise""",0.0198019801980198,0.01020408163265306,0.3333333333333333
+"49143,49143",SVC,"""Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Failed After Planting""",0.015384615384615384,0.009009009009009009,0.05263157894736842
+"49143,49143",SVC,"""WISMO::Delivered""",0.006172839506172839,0.009900990099009901,0.004484304932735426
+"49143,49143",SVC,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Bedding""",0.0,0.0,0.0
+"49143,49143",SVC,"""Question::Aftersales""",0.015748031496062992,0.010526315789473684,0.03125
+"49143,49143",SVC,"""WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",SVC,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",SVC,"""Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Failed After Planting""",0.2371794871794872,0.5522388059701493,0.1510204081632653
+"49143,49143",LogisticRegression,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.021739130434782605,0.012345679012345678,0.09090909090909091
+"49143,49143",LogisticRegression,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Cancellation::Full Order""",0.018348623853211007,0.014084507042253521,0.02631578947368421
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Poor On Arrival""",0.07785888077858881,0.18604651162790697,0.04923076923076923
+"49143,49143",LogisticRegression,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Auto Reply""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Poor On Arrival""",0.019417475728155338,0.011494252873563218,0.0625
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Positive Feedback""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Delay Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Spam""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Payment/Refund Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Delay Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Quote""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Reviews::General Feedback""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Product Information::Aftersales""",0.04733727810650888,0.04395604395604396,0.05128205128205128
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Order Amend""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Plant & Advise""",0.12987012987012989,0.11494252873563218,0.14925373134328357
+"49143,49143",LogisticRegression,"""Update Customer Information""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""No Response Needed (Triage)""",0.023121387283236997,0.02631578947368421,0.020618556701030927
+"49143,49143",LogisticRegression,"""IT Ticket""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Order Amend""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Question::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Plant & Advise""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::PDF::Failed After Planting""",0.09174311926605505,0.05555555555555555,0.2631578947368421
+"49143,49143",LogisticRegression,"""WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Damaged::Bedding""",0.01680672268907563,0.0125,0.02564102564102564
+"49143,49143",LogisticRegression,"""Question::Aftersales""",0.017241379310344827,0.011904761904761904,0.03125
+"49143,49143",LogisticRegression,"""WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",LogisticRegression,"""PDF::Failed After Planting""",0.2621951219512195,0.5180722891566265,0.17551020408163265
+"49143,49143",SVC,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Poor On Arrival""",0.018957345971563982,0.041237113402061855,0.012307692307692308
+"49143,49143",SVC,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",SVC,"""Auto Reply""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Poor On Arrival""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
+"49143,49143",SVC,"""Positive Feedback""",0.0,0.0,0.0
+"49143,49143",SVC,"""Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Delay Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Spam""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
+"49143,49143",SVC,"""Payment/Refund Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
+"49143,49143",SVC,"""Delay Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Quote""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
+"49143,49143",SVC,"""Reviews::General Feedback""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Evri""",0.0,0.0,0.0
+"49143,49143",SVC,"""Product Information::Aftersales""",0.02259887005649718,0.020202020202020204,0.02564102564102564
+"49143,49143",SVC,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Order Amend""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Plant & Advise""",0.026315789473684206,0.023529411764705882,0.029850746268656716
+"49143,49143",SVC,"""Update Customer Information""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wrong Item::Flowered Incorrectly""",0.017543859649122806,0.010526315789473684,0.05263157894736842
+"49143,49143",SVC,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
+"49143,49143",SVC,"""No Response Needed (Triage)""",0.010309278350515464,0.010309278350515464,0.010309278350515464
+"49143,49143",SVC,"""IT Ticket""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",SVC,"""Order Amend""",0.0,0.0,0.0
+"49143,49143",SVC,"""Question::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Plant & Advise""",0.0198019801980198,0.01020408163265306,0.3333333333333333
+"49143,49143",SVC,"""Pre-Sales Question""",0.0,0.0,0.0
+"49143,49143",SVC,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
+"49143,49143",SVC,"""WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::PDF::Failed After Planting""",0.015384615384615384,0.009009009009009009,0.05263157894736842
+"49143,49143",SVC,"""WISMO::Delivered""",0.006172839506172839,0.009900990099009901,0.004484304932735426
+"49143,49143",SVC,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Damaged::Bedding""",0.0,0.0,0.0
+"49143,49143",SVC,"""Question::Aftersales""",0.015748031496062992,0.010526315789473684,0.03125
+"49143,49143",SVC,"""WISMO::Lost In Transit""",0.0,0.0,0.0
+"49143,49143",SVC,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
+"49143,49143",SVC,"""Website/Online Account Issue""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
+"49143,49143",SVC,"""Product Information::Pre-Sales""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
+"49143,49143",SVC,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
+"49143,49143",SVC,"""PDF::Failed After Planting""",0.2371794871794872,0.5522388059701493,0.1510204081632653

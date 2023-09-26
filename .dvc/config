@@ -1,0 +1,2 @@
+['remote "dvc-remote"']
+    url = /tmp/dvc_local_store
