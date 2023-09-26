@@ -3,7 +3,7 @@
 # ONBOARD - the model for specific merchant is trained and onboarded into the system. The model is ready to run inference in a shadow mode.
 # MONITORING - the model is ready to run inference in a production mode.
 # RETIRED - the model stopped running inference in a production mode.
-'49143': 'ONBOARD' 
+'49143': 'MONITORING' 
 '23777': 'ONBOARD'
 '4453': 'ONBOARD'
 '81813': 'ONBOARD'
