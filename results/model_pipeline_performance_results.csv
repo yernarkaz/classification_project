@@ -1,249 +1,719 @@
-account_ids,model_name,tag,f1_score,precision,recall
-"49143,49143",LogisticRegression,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.021739130434782605,0.012345679012345678,0.09090909090909091
-"49143,49143",LogisticRegression,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Cancellation::Full Order""",0.018348623853211007,0.014084507042253521,0.02631578947368421
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Poor On Arrival""",0.07785888077858881,0.18604651162790697,0.04923076923076923
-"49143,49143",LogisticRegression,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Auto Reply""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Poor On Arrival""",0.019417475728155338,0.011494252873563218,0.0625
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Positive Feedback""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Delay Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Spam""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Payment/Refund Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Delay Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Quote""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Reviews::General Feedback""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Product Information::Aftersales""",0.04733727810650888,0.04395604395604396,0.05128205128205128
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Order Amend""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Plant & Advise""",0.12987012987012989,0.11494252873563218,0.14925373134328357
-"49143,49143",LogisticRegression,"""Update Customer Information""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""No Response Needed (Triage)""",0.023121387283236997,0.02631578947368421,0.020618556701030927
-"49143,49143",LogisticRegression,"""IT Ticket""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Order Amend""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Question::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Plant & Advise""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Failed After Planting""",0.09174311926605505,0.05555555555555555,0.2631578947368421
-"49143,49143",LogisticRegression,"""WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Bedding""",0.01680672268907563,0.0125,0.02564102564102564
-"49143,49143",LogisticRegression,"""Question::Aftersales""",0.017241379310344827,0.011904761904761904,0.03125
-"49143,49143",LogisticRegression,"""WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Failed After Planting""",0.2621951219512195,0.5180722891566265,0.17551020408163265
-"49143,49143",SVC,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Poor On Arrival""",0.018957345971563982,0.041237113402061855,0.012307692307692308
-"49143,49143",SVC,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",SVC,"""Auto Reply""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Poor On Arrival""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",SVC,"""Positive Feedback""",0.0,0.0,0.0
-"49143,49143",SVC,"""Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Delay Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Spam""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",SVC,"""Payment/Refund Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
-"49143,49143",SVC,"""Delay Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Quote""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",SVC,"""Reviews::General Feedback""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",SVC,"""Product Information::Aftersales""",0.02259887005649718,0.020202020202020204,0.02564102564102564
-"49143,49143",SVC,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Order Amend""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Plant & Advise""",0.026315789473684206,0.023529411764705882,0.029850746268656716
-"49143,49143",SVC,"""Update Customer Information""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wrong Item::Flowered Incorrectly""",0.017543859649122806,0.010526315789473684,0.05263157894736842
-"49143,49143",SVC,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
-"49143,49143",SVC,"""No Response Needed (Triage)""",0.010309278350515464,0.010309278350515464,0.010309278350515464
-"49143,49143",SVC,"""IT Ticket""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",SVC,"""Order Amend""",0.0,0.0,0.0
-"49143,49143",SVC,"""Question::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Plant & Advise""",0.0198019801980198,0.01020408163265306,0.3333333333333333
-"49143,49143",SVC,"""Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Failed After Planting""",0.015384615384615384,0.009009009009009009,0.05263157894736842
-"49143,49143",SVC,"""WISMO::Delivered""",0.006172839506172839,0.009900990099009901,0.004484304932735426
-"49143,49143",SVC,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Bedding""",0.0,0.0,0.0
-"49143,49143",SVC,"""Question::Aftersales""",0.015748031496062992,0.010526315789473684,0.03125
-"49143,49143",SVC,"""WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",SVC,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",SVC,"""Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Failed After Planting""",0.2371794871794872,0.5522388059701493,0.1510204081632653
-"49143,49143",LogisticRegression,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.021739130434782605,0.012345679012345678,0.09090909090909091
-"49143,49143",LogisticRegression,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Cancellation::Full Order""",0.018348623853211007,0.014084507042253521,0.02631578947368421
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Poor On Arrival""",0.07785888077858881,0.18604651162790697,0.04923076923076923
-"49143,49143",LogisticRegression,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Auto Reply""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Poor On Arrival""",0.019417475728155338,0.011494252873563218,0.0625
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Positive Feedback""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Delay Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Spam""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Payment/Refund Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Delay Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Quote""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Reviews::General Feedback""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Product Information::Aftersales""",0.04733727810650888,0.04395604395604396,0.05128205128205128
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Order Amend""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Plant & Advise""",0.12987012987012989,0.11494252873563218,0.14925373134328357
-"49143,49143",LogisticRegression,"""Update Customer Information""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""No Response Needed (Triage)""",0.023121387283236997,0.02631578947368421,0.020618556701030927
-"49143,49143",LogisticRegression,"""IT Ticket""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Order Amend""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Question::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Plant & Advise""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::PDF::Failed After Planting""",0.09174311926605505,0.05555555555555555,0.2631578947368421
-"49143,49143",LogisticRegression,"""WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Damaged::Bedding""",0.01680672268907563,0.0125,0.02564102564102564
-"49143,49143",LogisticRegression,"""Question::Aftersales""",0.017241379310344827,0.011904761904761904,0.03125
-"49143,49143",LogisticRegression,"""WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",LogisticRegression,"""PDF::Failed After Planting""",0.2621951219512195,0.5180722891566265,0.17551020408163265
-"49143,49143",SVC,"""Wholesale::Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Packer Damage""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Wrong Item::Flowered Incorrectly""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Poor On Arrival""",0.018957345971563982,0.041237113402061855,0.012307692307692308
-"49143,49143",SVC,"""Wholesale::Update Customer Information""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",SVC,"""Auto Reply""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Poor On Arrival""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Not Despatched""",0.0,0.0,0.0
-"49143,49143",SVC,"""Positive Feedback""",0.0,0.0,0.0
-"49143,49143",SVC,"""Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Delay Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Spam""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Wrong Item::Packing Error""",0.0,0.0,0.0
-"49143,49143",SVC,"""Payment/Refund Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO:: Stocks Exhausted""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Damaged::Yodel""",0.0,0.0,0.0
-"49143,49143",SVC,"""Delay Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Quote""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Delivered""",0.0,0.0,0.0
-"49143,49143",SVC,"""Reviews::General Feedback""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Evri""",0.0,0.0,0.0
-"49143,49143",SVC,"""Product Information::Aftersales""",0.02259887005649718,0.020202020202020204,0.02564102564102564
-"49143,49143",SVC,"""Wholesale::WISMO::Returned By Courier""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Cancellation::Full Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Order Amend""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Plant & Advise""",0.026315789473684206,0.023529411764705882,0.029850746268656716
-"49143,49143",SVC,"""Update Customer Information""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wrong Item::Flowered Incorrectly""",0.017543859649122806,0.010526315789473684,0.05263157894736842
-"49143,49143",SVC,"""Wholesale::Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Product Information::Aftersales""",0.0,0.0,0.0
-"49143,49143",SVC,"""No Response Needed (Triage)""",0.010309278350515464,0.010309278350515464,0.010309278350515464
-"49143,49143",SVC,"""IT Ticket""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",SVC,"""Order Amend""",0.0,0.0,0.0
-"49143,49143",SVC,"""Question::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Resolved by Phone/WhatsApp""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Plant & Advise""",0.0198019801980198,0.01020408163265306,0.3333333333333333
-"49143,49143",SVC,"""Pre-Sales Question""",0.0,0.0,0.0
-"49143,49143",SVC,"""Reviews::Courier Complaint (Delivered)""",0.0,0.0,0.0
-"49143,49143",SVC,"""WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::PDF::Failed After Planting""",0.015384615384615384,0.009009009009009009,0.05263157894736842
-"49143,49143",SVC,"""WISMO::Delivered""",0.006172839506172839,0.009900990099009901,0.004484304932735426
-"49143,49143",SVC,"""Wholesale::WISMO::On the way""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Damaged::Bedding""",0.0,0.0,0.0
-"49143,49143",SVC,"""Question::Aftersales""",0.015748031496062992,0.010526315789473684,0.03125
-"49143,49143",SVC,"""WISMO::Lost In Transit""",0.0,0.0,0.0
-"49143,49143",SVC,"""Order Confirmation/VAT Receipt""",0.0,0.0,0.0
-"49143,49143",SVC,"""Website/Online Account Issue""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::Cancellation::Part Of Order""",0.0,0.0,0.0
-"49143,49143",SVC,"""Product Information::Pre-Sales""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::Missing (Packing Error)""",0.0,0.0,0.0
-"49143,49143",SVC,"""Wholesale::WISMO::In Pick""",0.0,0.0,0.0
-"49143,49143",SVC,"""PDF::Failed After Planting""",0.2371794871794872,0.5522388059701493,0.1510204081632653
+account_id,model_name,f1_micro_score,f1_macro_score,f1_weighted_score,precision,recall,classification_report
+49143,LogisticRegression,0.3720823798627002,0.09866235048271299,0.2790759404674714,0.28116162224931385,0.3720823798627002,"                                               precision    recall  f1-score   support
+
+                                 ""Auto Reply""       0.00      0.00      0.00        13
+                   ""Cancellation::Full Order""       0.69      0.47      0.56        38
+                ""Cancellation::Part Of Order""       0.00      0.00      0.00        19
+                                ""Delay Order""       0.67      0.42      0.51        48
+                                  ""IT Ticket""       0.00      0.00      0.00         5
+                ""No Response Needed (Triage)""       0.33      0.37      0.35        94
+                                ""Order Amend""       0.00      0.00      0.00        32
+             ""Order Confirmation/VAT Receipt""       0.75      0.16      0.27        37
+                      ""PDF::Damaged::Bedding""       0.00      0.00      0.00        39
+                         ""PDF::Damaged::Evri""       0.00      0.00      0.00        27
+                ""PDF::Damaged::Packer Damage""       0.00      0.00      0.00         5
+                 ""PDF::Failed After Planting""       0.42      0.59      0.49       244
+                        ""PDF::Plant & Advise""       0.00      0.00      0.00        67
+                       ""PDF::Poor On Arrival""       0.37      0.76      0.50       323
+                    ""Payment/Refund Question""       0.40      0.19      0.26        31
+                          ""Positive Feedback""       0.00      0.00      0.00        15
+                         ""Pre-Sales Question""       0.00      0.00      0.00        13
+            ""Product Information::Aftersales""       0.67      0.03      0.05        77
+             ""Product Information::Pre-Sales""       0.00      0.00      0.00        26
+                       ""Question::Aftersales""       0.00      0.00      0.00        32
+                        ""Question::Pre-Sales""       0.00      0.00      0.00        22
+                 ""Resolved by Phone/WhatsApp""       0.00      0.00      0.00         3
+     ""Reviews::Courier Complaint (Delivered)""       0.00      0.00      0.00         2
+                  ""Reviews::General Feedback""       0.00      0.00      0.00         8
+                                       ""Spam""       0.80      0.16      0.27        25
+                ""Update Customer Information""       0.64      0.60      0.62        57
+                           ""WISMO::Delivered""       0.24      0.14      0.18       215
+                             ""WISMO::In Pick""       0.00      0.00      0.00        46
+                     ""WISMO::Lost In Transit""       0.00      0.00      0.00        42
+             ""WISMO::Missing (Packing Error)""       0.00      0.00      0.00        20
+                      ""WISMO::Not Despatched""       0.33      0.88      0.48       307
+                          ""WISMO::On the way""       0.00      0.00      0.00       135
+                 ""WISMO::Returned By Courier""       0.00      0.00      0.00         5
+               ""Website/Online Account Issue""       0.00      0.00      0.00        11
+  ""Wholesale::Order Confirmation/VAT Receipt""       0.00      0.00      0.00         3
+      ""Wholesale::PDF::Failed After Planting""       0.00      0.00      0.00        19
+             ""Wholesale::PDF::Plant & Advise""       0.00      0.00      0.00         3
+            ""Wholesale::PDF::Poor On Arrival""       0.00      0.00      0.00        16
+              ""Wholesale::Pre-Sales Question""       0.00      0.00      0.00         3
+                           ""Wholesale::Quote""       0.00      0.00      0.00         8
+          ""Wholesale::WISMO::Lost In Transit""       0.00      0.00      0.00         2
+           ""Wholesale::WISMO::Not Despatched""       0.00      0.00      0.00         6
+               ""Wholesale::WISMO::On the way""       0.00      0.00      0.00         4
+""Wholesale::Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        11
+           ""Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        19
+                  ""Wrong Item::Packing Error""       0.00      0.00      0.00         8
+
+                                     accuracy                           0.37      2185
+                                    macro avg       0.14      0.10      0.10      2185
+                                 weighted avg       0.28      0.37      0.28      2185
+"
+49143,SVC,0.14782608695652175,0.005599472990777338,0.038076416337285895,0.021852551984877126,0.14782608695652175,"                                               precision    recall  f1-score   support
+
+                                 ""Auto Reply""       0.00      0.00      0.00        13
+                   ""Cancellation::Full Order""       0.00      0.00      0.00        38
+                ""Cancellation::Part Of Order""       0.00      0.00      0.00        19
+                                ""Delay Order""       0.00      0.00      0.00        48
+                                  ""IT Ticket""       0.00      0.00      0.00         5
+                ""No Response Needed (Triage)""       0.00      0.00      0.00        94
+                                ""Order Amend""       0.00      0.00      0.00        32
+             ""Order Confirmation/VAT Receipt""       0.00      0.00      0.00        37
+                      ""PDF::Damaged::Bedding""       0.00      0.00      0.00        39
+                         ""PDF::Damaged::Evri""       0.00      0.00      0.00        27
+                ""PDF::Damaged::Packer Damage""       0.00      0.00      0.00         5
+                 ""PDF::Failed After Planting""       0.00      0.00      0.00       244
+                        ""PDF::Plant & Advise""       0.00      0.00      0.00        67
+                       ""PDF::Poor On Arrival""       0.15      1.00      0.26       323
+                    ""Payment/Refund Question""       0.00      0.00      0.00        31
+                          ""Positive Feedback""       0.00      0.00      0.00        15
+                         ""Pre-Sales Question""       0.00      0.00      0.00        13
+            ""Product Information::Aftersales""       0.00      0.00      0.00        77
+             ""Product Information::Pre-Sales""       0.00      0.00      0.00        26
+                       ""Question::Aftersales""       0.00      0.00      0.00        32
+                        ""Question::Pre-Sales""       0.00      0.00      0.00        22
+                 ""Resolved by Phone/WhatsApp""       0.00      0.00      0.00         3
+     ""Reviews::Courier Complaint (Delivered)""       0.00      0.00      0.00         2
+                  ""Reviews::General Feedback""       0.00      0.00      0.00         8
+                                       ""Spam""       0.00      0.00      0.00        25
+                ""Update Customer Information""       0.00      0.00      0.00        57
+                           ""WISMO::Delivered""       0.00      0.00      0.00       215
+                             ""WISMO::In Pick""       0.00      0.00      0.00        46
+                     ""WISMO::Lost In Transit""       0.00      0.00      0.00        42
+             ""WISMO::Missing (Packing Error)""       0.00      0.00      0.00        20
+                      ""WISMO::Not Despatched""       0.00      0.00      0.00       307
+                          ""WISMO::On the way""       0.00      0.00      0.00       135
+                 ""WISMO::Returned By Courier""       0.00      0.00      0.00         5
+               ""Website/Online Account Issue""       0.00      0.00      0.00        11
+  ""Wholesale::Order Confirmation/VAT Receipt""       0.00      0.00      0.00         3
+      ""Wholesale::PDF::Failed After Planting""       0.00      0.00      0.00        19
+             ""Wholesale::PDF::Plant & Advise""       0.00      0.00      0.00         3
+            ""Wholesale::PDF::Poor On Arrival""       0.00      0.00      0.00        16
+              ""Wholesale::Pre-Sales Question""       0.00      0.00      0.00         3
+                           ""Wholesale::Quote""       0.00      0.00      0.00         8
+          ""Wholesale::WISMO::Lost In Transit""       0.00      0.00      0.00         2
+           ""Wholesale::WISMO::Not Despatched""       0.00      0.00      0.00         6
+               ""Wholesale::WISMO::On the way""       0.00      0.00      0.00         4
+""Wholesale::Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        11
+           ""Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        19
+                  ""Wrong Item::Packing Error""       0.00      0.00      0.00         8
+
+                                     accuracy                           0.15      2185
+                                    macro avg       0.00      0.02      0.01      2185
+                                 weighted avg       0.02      0.15      0.04      2185
+"
+23777,LogisticRegression,0.3761638733705773,0.24110002317412743,0.3367085278839774,0.3358814880198556,0.3761638733705773,"                                                     precision    recall  f1-score   support
+
+                                     ""Cancel Order""       0.38      0.35      0.36        26
+                      ""Cancel Request:: Doc Orders""       0.65      0.50      0.56        22
+     ""Cancel Request:: I don't want a subscription""       0.33      0.14      0.20        28
+                       ""Cancel Request:: No reason""       0.40      0.77      0.53        79
+                     ""Cancel Request:: Not working""       0.27      0.15      0.19        27
+                           ""Cancel Request:: Other""       0.26      0.28      0.27        65
+                           ""Cancel Request:: Price""       0.50      0.14      0.22        21
+                 ""Cancel Request:: Purchase at CVS""       0.71      0.50      0.59        10
+                        ""Cancel Request:: Too much""       0.33      0.11      0.17        27
+                                         ""Feedback""       0.12      0.16      0.14        32
+                            ""Feedback:: Commercial""       0.00      0.00      0.00         2
+                                 ""Feedback:: Other""       0.00      0.00      0.00        15
+                          ""Feedback:: Subscription""       0.00      0.00      0.00         2
+                                            ""Other""       0.05      0.05      0.05        21
+                         ""Other:: Discount Request""       0.40      0.29      0.33         7
+                                  ""Other:: Dispute""       0.76      1.00      0.87        13
+                                    ""Other:: Other""       0.25      0.09      0.13        11
+                            ""Other:: PayPal Cancel""       0.88      1.00      0.94        29
+                              ""Other:: Unsubscribe""       0.00      0.00      0.00         4
+                          ""Other:: Urinary history""       0.00      0.00      0.00         5
+                           ""Quality Issue:: Defend""       0.00      0.00      0.00         3
+                          ""Quality Issue:: Promote""       0.50      0.33      0.40         3
+                          ""Questions:: Antibiotics""       0.50      0.33      0.40         6
+                              ""Questions:: For men""       0.50      0.29      0.36         7
+                          ""Questions:: Ingredients""       0.00      0.00      0.00         7
+                                ""Questions:: Order""       0.00      0.00      0.00         9
+                 ""Questions:: Other health related""       0.00      0.00      0.00         6
+                                ""Questions:: Other""       0.00      0.00      0.00        23
+                              ""Questions:: Product""       0.22      0.43      0.29        37
+               ""Questions:: Product:: How it works""       0.00      0.00      0.00         4
+                ""Questions:: Product:: How to take""       0.00      0.00      0.00         5
+                      ""Questions:: Product:: Other""       0.00      0.00      0.00        12
+         ""Questions:: Product:: Whats best for me?""       0.33      0.22      0.27         9
+""Questions:: Product:: Will this work if I have IC""       1.00      0.33      0.50         3
+                       ""Questions:: Shipping Times""       0.00      0.00      0.00         5
+                                ""Refund:: Courtesy""       0.00      0.00      0.00         8
+                ""Refund:: Didn't Mean to Subscribe""       0.00      0.00      0.00         3
+                                ""Refund:: Discount""       1.00      0.40      0.57         5
+                       ""Refund:: MBG:: Not working""       0.00      0.00      0.00         7
+           ""Refund:: MBG:: Side effects/Doc orders""       0.50      0.17      0.25         6
+                 ""Refund:: No longer using/General""       0.00      0.00      0.00         3
+                                   ""Return Request""       0.31      0.36      0.33        22
+                        ""Shipping:: Change Address""       0.48      0.65      0.56        23
+                         ""Shipping:: Delayed Order""       0.00      0.00      0.00         8
+        ""Shipping:: Delivered not received:: Found""       0.00      0.00      0.00         4
+    ""Shipping:: Delivered not received:: Reshipped""       0.43      0.40      0.41        15
+                   ""Shipping:: Fulfillment Mistake""       0.67      0.29      0.40         7
+                              ""Shipping:: Tracking""       0.29      0.38      0.33        26
+                                     ""Side Effects""       0.44      0.35      0.39        20
+                           ""Subscription:: Add OTP""       0.00      0.00      0.00         9
+                       ""Subscription:: Change Date""       0.47      0.66      0.55        67
+                  ""Subscription:: Change Frequency""       0.33      0.12      0.18         8
+        ""Subscription:: Change payment information""       0.61      0.70      0.65        20
+                     ""Subscription:: Process Today""       0.00      0.00      0.00        14
+                         ""Subscription:: Questions""       0.21      0.17      0.19        18
+           ""Subscription:: Reactivate Subscription""       0.20      0.12      0.15         8
+                      ""Subscription:: Swap Product""       0.45      0.71      0.56        77
+       ""Subscription:: Update Personal Information""       0.50      0.52      0.51        27
+                              ""Usage Updates:: Bad""       0.24      0.31      0.27        29
+                             ""Usage Updates:: Good""       0.31      0.52      0.39        31
+                  ""Usage Updates:: Haven't Started""       0.50      0.33      0.40         6
+               ""Usage Updates:: Neutral/Don't Know""       0.17      0.06      0.08        18
+
+                                           accuracy                           0.38      1074
+                                          macro avg       0.28      0.24      0.24      1074
+                                       weighted avg       0.34      0.38      0.34      1074
+"
+23777,SVC,0.07355679702048418,0.0022102229807234985,0.010079769236111447,0.005410602387912709,0.07355679702048418,"                                                     precision    recall  f1-score   support
+
+                                     ""Cancel Order""       0.00      0.00      0.00        26
+                      ""Cancel Request:: Doc Orders""       0.00      0.00      0.00        22
+     ""Cancel Request:: I don't want a subscription""       0.00      0.00      0.00        28
+                       ""Cancel Request:: No reason""       0.07      1.00      0.14        79
+                     ""Cancel Request:: Not working""       0.00      0.00      0.00        27
+                           ""Cancel Request:: Other""       0.00      0.00      0.00        65
+                           ""Cancel Request:: Price""       0.00      0.00      0.00        21
+                 ""Cancel Request:: Purchase at CVS""       0.00      0.00      0.00        10
+                        ""Cancel Request:: Too much""       0.00      0.00      0.00        27
+                                         ""Feedback""       0.00      0.00      0.00        32
+                            ""Feedback:: Commercial""       0.00      0.00      0.00         2
+                                 ""Feedback:: Other""       0.00      0.00      0.00        15
+                          ""Feedback:: Subscription""       0.00      0.00      0.00         2
+                                            ""Other""       0.00      0.00      0.00        21
+                         ""Other:: Discount Request""       0.00      0.00      0.00         7
+                                  ""Other:: Dispute""       0.00      0.00      0.00        13
+                                    ""Other:: Other""       0.00      0.00      0.00        11
+                            ""Other:: PayPal Cancel""       0.00      0.00      0.00        29
+                              ""Other:: Unsubscribe""       0.00      0.00      0.00         4
+                          ""Other:: Urinary history""       0.00      0.00      0.00         5
+                           ""Quality Issue:: Defend""       0.00      0.00      0.00         3
+                          ""Quality Issue:: Promote""       0.00      0.00      0.00         3
+                          ""Questions:: Antibiotics""       0.00      0.00      0.00         6
+                              ""Questions:: For men""       0.00      0.00      0.00         7
+                          ""Questions:: Ingredients""       0.00      0.00      0.00         7
+                                ""Questions:: Order""       0.00      0.00      0.00         9
+                 ""Questions:: Other health related""       0.00      0.00      0.00         6
+                                ""Questions:: Other""       0.00      0.00      0.00        23
+                              ""Questions:: Product""       0.00      0.00      0.00        37
+               ""Questions:: Product:: How it works""       0.00      0.00      0.00         4
+                ""Questions:: Product:: How to take""       0.00      0.00      0.00         5
+                      ""Questions:: Product:: Other""       0.00      0.00      0.00        12
+         ""Questions:: Product:: Whats best for me?""       0.00      0.00      0.00         9
+""Questions:: Product:: Will this work if I have IC""       0.00      0.00      0.00         3
+                       ""Questions:: Shipping Times""       0.00      0.00      0.00         5
+                                ""Refund:: Courtesy""       0.00      0.00      0.00         8
+                ""Refund:: Didn't Mean to Subscribe""       0.00      0.00      0.00         3
+                                ""Refund:: Discount""       0.00      0.00      0.00         5
+                       ""Refund:: MBG:: Not working""       0.00      0.00      0.00         7
+           ""Refund:: MBG:: Side effects/Doc orders""       0.00      0.00      0.00         6
+                 ""Refund:: No longer using/General""       0.00      0.00      0.00         3
+                                   ""Return Request""       0.00      0.00      0.00        22
+                        ""Shipping:: Change Address""       0.00      0.00      0.00        23
+                         ""Shipping:: Delayed Order""       0.00      0.00      0.00         8
+        ""Shipping:: Delivered not received:: Found""       0.00      0.00      0.00         4
+    ""Shipping:: Delivered not received:: Reshipped""       0.00      0.00      0.00        15
+                   ""Shipping:: Fulfillment Mistake""       0.00      0.00      0.00         7
+                              ""Shipping:: Tracking""       0.00      0.00      0.00        26
+                                     ""Side Effects""       0.00      0.00      0.00        20
+                           ""Subscription:: Add OTP""       0.00      0.00      0.00         9
+                       ""Subscription:: Change Date""       0.00      0.00      0.00        67
+                  ""Subscription:: Change Frequency""       0.00      0.00      0.00         8
+        ""Subscription:: Change payment information""       0.00      0.00      0.00        20
+                     ""Subscription:: Process Today""       0.00      0.00      0.00        14
+                         ""Subscription:: Questions""       0.00      0.00      0.00        18
+           ""Subscription:: Reactivate Subscription""       0.00      0.00      0.00         8
+                      ""Subscription:: Swap Product""       0.00      0.00      0.00        77
+       ""Subscription:: Update Personal Information""       0.00      0.00      0.00        27
+                              ""Usage Updates:: Bad""       0.00      0.00      0.00        29
+                             ""Usage Updates:: Good""       0.00      0.00      0.00        31
+                  ""Usage Updates:: Haven't Started""       0.00      0.00      0.00         6
+               ""Usage Updates:: Neutral/Don't Know""       0.00      0.00      0.00        18
+
+                                           accuracy                           0.07      1074
+                                          macro avg       0.00      0.02      0.00      1074
+                                       weighted avg       0.01      0.07      0.01      1074
+"
+4453,LogisticRegression,0.2988505747126437,0.060496138948330495,0.201853159712535,0.17094253562977096,0.2988505747126437,"                                                   precision    recall  f1-score   support
+
+                                  ""Amazon::Other""       0.00      0.00      0.00        10
+                         ""Amazon::Return Request""       0.00      0.00      0.00        16
+       ""External Channel::Amazon::Return Request""       0.00      0.00      0.00        22
+                                          ""Other""       0.24      0.86      0.37        69
+           ""Post-purchase::Change Order::Address""       0.00      0.00      0.00        13
+      ""Post-purchase::Change Order::Cancel Order""       0.00      0.00      0.00        19
+       ""Post-purchase::Change Order::Change Item""       0.00      0.00      0.00        24
+     ""Post-purchase::Change Order::Discount Code""       0.00      0.00      0.00         9
+               ""Post-purchase::Feedback::Product""       0.00      0.00      0.00         9
+                    ""Post-purchase::Other::Other""       0.00      0.00      0.00        27
+              ""Post-purchase::Other::Sizing Help""       0.00      0.00      0.00        16
+                  ""Post-purchase::Return::Defect""       0.78      0.66      0.71        53
+        ""Post-purchase::Return::Exchange Request""       0.33      0.61      0.43        57
+            ""Post-purchase::Return::Narvar Issue""       0.00      0.00      0.00         2
+                   ""Post-purchase::Return::Other""       0.00      0.00      0.00        13
+          ""Post-purchase::Return::Refund Inquiry""       0.00      0.00      0.00         8
+          ""Post-purchase::Return::Return Request""       0.22      0.47      0.30        58
+    ""Post-purchase::Shipping::Late Delivery::DHL""       0.00      0.00      0.00         7
+  ""Post-purchase::Shipping::Late Delivery::FedEx""       0.00      0.00      0.00         4
+   ""Post-purchase::Shipping::Late Delivery::USPS""       0.00      0.00      0.00         3
+     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.00      0.00      0.00        14
+    ""Post-purchase::Shipping::Lost/Damaged::USPS""       0.00      0.00      0.00         2
+ ""Post-purchase::Shipping::Marked Delivered::DHL""       0.00      0.00      0.00         9
+""Post-purchase::Shipping::Marked Delivered::USPS""       0.00      0.00      0.00        13
+                 ""Post-purchase::Shipping::Other""       0.00      0.00      0.00        12
+      ""Post-purchase::Shipping::XB::Missing Item""       0.00      0.00      0.00         4
+                  ""Presale::Issue::Cart/Checkout""       0.00      0.00      0.00         7
+      ""Presale::Policy Inquiry::Discount Request""       0.00      0.00      0.00         3
+                ""Presale::Product Inquiry::Other""       0.00      0.00      0.00         5
+               ""Presale::Product Inquiry::Sizing""       0.00      0.00      0.00        14
+
+                                         accuracy                           0.30       522
+                                        macro avg       0.05      0.09      0.06       522
+                                     weighted avg       0.17      0.30      0.20       522
+"
+4453,SVC,0.13218390804597702,0.0077834179357022,0.03086527802088803,0.017472585546307307,0.13218390804597702,"                                                   precision    recall  f1-score   support
+
+                                  ""Amazon::Other""       0.00      0.00      0.00        10
+                         ""Amazon::Return Request""       0.00      0.00      0.00        16
+       ""External Channel::Amazon::Return Request""       0.00      0.00      0.00        22
+                                          ""Other""       0.13      1.00      0.23        69
+           ""Post-purchase::Change Order::Address""       0.00      0.00      0.00        13
+      ""Post-purchase::Change Order::Cancel Order""       0.00      0.00      0.00        19
+       ""Post-purchase::Change Order::Change Item""       0.00      0.00      0.00        24
+     ""Post-purchase::Change Order::Discount Code""       0.00      0.00      0.00         9
+               ""Post-purchase::Feedback::Product""       0.00      0.00      0.00         9
+                    ""Post-purchase::Other::Other""       0.00      0.00      0.00        27
+              ""Post-purchase::Other::Sizing Help""       0.00      0.00      0.00        16
+                  ""Post-purchase::Return::Defect""       0.00      0.00      0.00        53
+        ""Post-purchase::Return::Exchange Request""       0.00      0.00      0.00        57
+            ""Post-purchase::Return::Narvar Issue""       0.00      0.00      0.00         2
+                   ""Post-purchase::Return::Other""       0.00      0.00      0.00        13
+          ""Post-purchase::Return::Refund Inquiry""       0.00      0.00      0.00         8
+          ""Post-purchase::Return::Return Request""       0.00      0.00      0.00        58
+    ""Post-purchase::Shipping::Late Delivery::DHL""       0.00      0.00      0.00         7
+  ""Post-purchase::Shipping::Late Delivery::FedEx""       0.00      0.00      0.00         4
+   ""Post-purchase::Shipping::Late Delivery::USPS""       0.00      0.00      0.00         3
+     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.00      0.00      0.00        14
+    ""Post-purchase::Shipping::Lost/Damaged::USPS""       0.00      0.00      0.00         2
+ ""Post-purchase::Shipping::Marked Delivered::DHL""       0.00      0.00      0.00         9
+""Post-purchase::Shipping::Marked Delivered::USPS""       0.00      0.00      0.00        13
+                 ""Post-purchase::Shipping::Other""       0.00      0.00      0.00        12
+      ""Post-purchase::Shipping::XB::Missing Item""       0.00      0.00      0.00         4
+                  ""Presale::Issue::Cart/Checkout""       0.00      0.00      0.00         7
+      ""Presale::Policy Inquiry::Discount Request""       0.00      0.00      0.00         3
+                ""Presale::Product Inquiry::Other""       0.00      0.00      0.00         5
+               ""Presale::Product Inquiry::Sizing""       0.00      0.00      0.00        14
+
+                                         accuracy                           0.13       522
+                                        macro avg       0.00      0.03      0.01       522
+                                     weighted avg       0.02      0.13      0.03       522
+"
+81813,LogisticRegression,0.49478079331941544,0.3942780709499896,0.4818534937832506,0.48060213621592934,0.49478079331941544,"                                            precision    recall  f1-score   support
+
+                     ""Amazon Notification""       0.18      0.16      0.17        19
+                           ""Auto Response""       0.33      0.40      0.36        15
+              ""Customer:: Invoice Request""       0.75      0.75      0.75         8
+                ""Customer:: New Wholesale""       1.00      0.75      0.86         8
+                ""Customer::Address Change""       0.75      0.69      0.72        13
+                        ""Customer::Advice""       0.33      0.55      0.41        22
+          ""Customer::Cancellation Request""       0.55      0.67      0.60         9
+                  ""Customer::Changed Mind""       0.29      0.40      0.33         5
+             ""Customer::Friendly Feedback""       0.00      0.00      0.00         4
+           ""Customer::Incorrectly Ordered""       0.38      0.32      0.34        19
+             ""Customer::Negative Feedback""       0.00      0.00      0.00         5
+                ""Customer::Purchase Query""       0.15      0.18      0.16        22
+           ""Customer::Subscription Change""       0.17      0.17      0.17        12
+             ""Customer::Wholesale Enquiry""       0.00      0.00      0.00         3
+             ""Distribution::Picking Error""       0.47      0.39      0.43        23
+               ""Distribution::Stock Issue""       0.00      0.00      0.00         2
+                  ""Feefo::Positive Review""       0.50      0.33      0.40         3
+                            ""Flow Message""       0.96      1.00      0.98        22
+                               ""Junk Mail""       0.15      0.11      0.12        19
+                       ""Non Service Email""       0.30      0.33      0.32         9
+  ""Non Service Email::Amazon Notification""       0.64      0.72      0.68        47
+        ""Non Service Email::Auto Response""       0.26      0.20      0.23        30
+            ""Non Service Email::Junk Mail""       0.68      0.77      0.72        70
+    ""Non Service Email::Non Service Email""       0.00      0.00      0.00         7
+ ""Non Service Email::Payment Notification""       0.67      0.74      0.70        19
+""Non Service Email::Shipping Notification""       0.86      1.00      0.92         6
+                    ""Payment Notification""       0.43      0.30      0.35        10
+               ""Production::Quality Issue""       0.00      0.00      0.00         2
+                   ""Review::Feefo::Update""       0.50      0.75      0.60         4
+           ""Shipping Issue::Address Issue""       0.00      0.00      0.00         2
+                 ""Shipping Issue::Damaged""       1.00      0.67      0.80         3
+           ""Shipping Issue::Delayed Order""       0.50      0.20      0.29         5
+         ""Shipping Issue::Lost In Transit""       0.50      0.25      0.33         8
+            ""Shipping Issue::Not Received""       0.00      0.00      0.00         4
+                  ""System::Account Access""       0.75      0.75      0.75         4
+             ""System::Discount Code Issue""       0.75      0.64      0.69        14
+                  ""System::Recharge Issue""       0.33      0.50      0.40         2
+
+                                  accuracy                           0.49       479
+                                 macro avg       0.41      0.40      0.39       479
+                              weighted avg       0.48      0.49      0.48       479
+"
+81813,SVC,0.14613778705636743,0.006892138039679024,0.03726646664461101,0.021356252805732192,0.14613778705636743,"                                            precision    recall  f1-score   support
+
+                     ""Amazon Notification""       0.00      0.00      0.00        19
+                           ""Auto Response""       0.00      0.00      0.00        15
+              ""Customer:: Invoice Request""       0.00      0.00      0.00         8
+                ""Customer:: New Wholesale""       0.00      0.00      0.00         8
+                ""Customer::Address Change""       0.00      0.00      0.00        13
+                        ""Customer::Advice""       0.00      0.00      0.00        22
+          ""Customer::Cancellation Request""       0.00      0.00      0.00         9
+                  ""Customer::Changed Mind""       0.00      0.00      0.00         5
+             ""Customer::Friendly Feedback""       0.00      0.00      0.00         4
+           ""Customer::Incorrectly Ordered""       0.00      0.00      0.00        19
+             ""Customer::Negative Feedback""       0.00      0.00      0.00         5
+                ""Customer::Purchase Query""       0.00      0.00      0.00        22
+           ""Customer::Subscription Change""       0.00      0.00      0.00        12
+             ""Customer::Wholesale Enquiry""       0.00      0.00      0.00         3
+             ""Distribution::Picking Error""       0.00      0.00      0.00        23
+               ""Distribution::Stock Issue""       0.00      0.00      0.00         2
+                  ""Feefo::Positive Review""       0.00      0.00      0.00         3
+                            ""Flow Message""       0.00      0.00      0.00        22
+                               ""Junk Mail""       0.00      0.00      0.00        19
+                       ""Non Service Email""       0.00      0.00      0.00         9
+  ""Non Service Email::Amazon Notification""       0.00      0.00      0.00        47
+        ""Non Service Email::Auto Response""       0.00      0.00      0.00        30
+            ""Non Service Email::Junk Mail""       0.15      1.00      0.26        70
+    ""Non Service Email::Non Service Email""       0.00      0.00      0.00         7
+ ""Non Service Email::Payment Notification""       0.00      0.00      0.00        19
+""Non Service Email::Shipping Notification""       0.00      0.00      0.00         6
+                    ""Payment Notification""       0.00      0.00      0.00        10
+               ""Production::Quality Issue""       0.00      0.00      0.00         2
+                   ""Review::Feefo::Update""       0.00      0.00      0.00         4
+           ""Shipping Issue::Address Issue""       0.00      0.00      0.00         2
+                 ""Shipping Issue::Damaged""       0.00      0.00      0.00         3
+           ""Shipping Issue::Delayed Order""       0.00      0.00      0.00         5
+         ""Shipping Issue::Lost In Transit""       0.00      0.00      0.00         8
+            ""Shipping Issue::Not Received""       0.00      0.00      0.00         4
+                  ""System::Account Access""       0.00      0.00      0.00         4
+             ""System::Discount Code Issue""       0.00      0.00      0.00        14
+                  ""System::Recharge Issue""       0.00      0.00      0.00         2
+
+                                  accuracy                           0.15       479
+                                 macro avg       0.00      0.03      0.01       479
+                              weighted avg       0.02      0.15      0.04       479
+"
+89195,LogisticRegression,0.4344262295081967,0.14796057183280342,0.2812270811480444,0.20879971907819175,0.4344262295081967,"                      precision    recall  f1-score   support
+
+             ""Order""       0.00      0.00      0.00        93
+        ""Others::NR""       0.00      0.00      0.00        60
+      ""Others::Spam""       0.00      0.00      0.00        26
+          ""Pre-sale""       0.00      0.00      0.00        49
+            ""Return""       0.40      0.93      0.56       117
+""Shipping::Tracking""       0.00      0.00      0.00        19
+   ""Shipping::WISMO""       0.48      0.90      0.63       115
+          ""Warranty""       0.00      0.00      0.00         9
+
+            accuracy                           0.43       488
+           macro avg       0.11      0.23      0.15       488
+        weighted avg       0.21      0.43      0.28       488
+"
+89195,SVC,0.5163934426229508,0.34186850863988816,0.4454572399782392,0.5159454591009919,0.5163934426229508,"                      precision    recall  f1-score   support
+
+             ""Order""       0.58      0.15      0.24        93
+        ""Others::NR""       0.95      0.33      0.49        60
+      ""Others::Spam""       0.85      0.65      0.74        26
+          ""Pre-sale""       0.00      0.00      0.00        49
+            ""Return""       0.38      0.89      0.54       117
+""Shipping::Tracking""       0.00      0.00      0.00        19
+   ""Shipping::WISMO""       0.64      0.84      0.73       115
+          ""Warranty""       0.00      0.00      0.00         9
+
+            accuracy                           0.52       488
+           macro avg       0.43      0.36      0.34       488
+        weighted avg       0.52      0.52      0.45       488
+"
+12167,LogisticRegression,0.36515513126491644,0.03407250785762827,0.21537093601012716,0.1837275094093702,0.36515513126491644,"                                                             precision    recall  f1-score   support
+
+                                           ""Damaged::Other""       0.00      0.00      0.00         2
+                                ""Damaged::Outside Warranty""       0.00      0.00      0.00        14
+                                 ""Damaged::Within Warranty""       0.50      0.04      0.07        25
+                                ""Fulfillment::Missing item""       0.00      0.00      0.00         3
+                                       ""Fulfillment::WISMO""       0.00      0.00      0.00         9
+                                  ""Fulfillment::Wrong item""       0.00      0.00      0.00         3
+                                       ""Gift card::Inquiry""       0.00      0.00      0.00         2
+                                                      ""N/A""       0.35      1.00      0.52       125
+                                            ""Order::cancel""       0.00      0.00      0.00        21
+                           ""Order::edit::address::in-state""       0.00      0.00      0.00         6
+                                        ""Order::edit::item""       0.00      0.00      0.00        28
+   ""Post-Purchase::Discount::Retroactively apply::Same day""       0.00      0.00      0.00         4
+""Post-Purchase::Discount::Retroactively apply::Within week""       0.00      0.00      0.00         7
+                                    ""Pre-purchase::coupons""       0.00      0.00      0.00         4
+                                   ""Pre-purchase::question""       0.00      0.00      0.00         6
+                                 ""Product::Quality Concern""       0.00      0.00      0.00         2
+                                      ""Return::Gift Return""       0.00      0.00      0.00         5
+                              ""Return::Gift Return::No POP""       0.00      0.00      0.00         3
+                                           ""Return::How-to""       0.44      0.57      0.50        47
+                                            ""Return::Other""       0.00      0.00      0.00        28
+                                 ""Return::Policy questions""       0.00      0.00      0.00        11
+             ""Return::Status Inquiry::arrived at warehouse""       0.00      0.00      0.00         5
+                           ""Return::promotion::price match""       0.00      0.00      0.00         4
+                                 ""Rewards::Combine account""       0.00      0.00      0.00         2
+                                           ""Rewards::Other""       0.00      0.00      0.00        14
+                   ""Rewards::Stacking with Other Discounts""       0.00      0.00      0.00         3
+                                    ""Rewards::Void Voucher""       0.00      0.00      0.00        19
+                                     ""Rewards::tier status""       0.00      0.00      0.00         2
+                                   ""Shipping::Claim::Route""       0.00      0.00      0.00         4
+ ""Shipping::FedEx/USPS/Canada Post::Delivered Not Received""       0.00      0.00      0.00         4
+                              ""Shipping::FedEx/USPS::WISMO""       0.00      0.00      0.00         4
+                                          ""Shipping::Other""       0.00      0.00      0.00         3
+
+                                                   accuracy                           0.37       419
+                                                  macro avg       0.04      0.05      0.03       419
+                                               weighted avg       0.18      0.37      0.22       419
+"
+12167,SVC,0.5799522673031027,0.1702959010804971,0.47030243596981863,0.4329633889572891,0.5799522673031027,"                                                             precision    recall  f1-score   support
+
+                                           ""Damaged::Other""       0.00      0.00      0.00         2
+                                ""Damaged::Outside Warranty""       0.00      0.00      0.00        14
+                                 ""Damaged::Within Warranty""       0.52      0.88      0.66        25
+                                ""Fulfillment::Missing item""       0.00      0.00      0.00         3
+                                       ""Fulfillment::WISMO""       1.00      0.11      0.20         9
+                                  ""Fulfillment::Wrong item""       0.00      0.00      0.00         3
+                                       ""Gift card::Inquiry""       0.00      0.00      0.00         2
+                                                      ""N/A""       0.55      0.99      0.70       125
+                                            ""Order::cancel""       0.89      0.76      0.82        21
+                           ""Order::edit::address::in-state""       1.00      0.33      0.50         6
+                                        ""Order::edit::item""       0.70      0.68      0.69        28
+   ""Post-Purchase::Discount::Retroactively apply::Same day""       0.00      0.00      0.00         4
+""Post-Purchase::Discount::Retroactively apply::Within week""       0.00      0.00      0.00         7
+                                    ""Pre-purchase::coupons""       0.00      0.00      0.00         4
+                                   ""Pre-purchase::question""       0.00      0.00      0.00         6
+                                 ""Product::Quality Concern""       0.00      0.00      0.00         2
+                                      ""Return::Gift Return""       0.00      0.00      0.00         5
+                              ""Return::Gift Return::No POP""       0.00      0.00      0.00         3
+                                           ""Return::How-to""       0.53      0.79      0.63        47
+                                            ""Return::Other""       0.00      0.00      0.00        28
+                                 ""Return::Policy questions""       0.00      0.00      0.00        11
+             ""Return::Status Inquiry::arrived at warehouse""       0.00      0.00      0.00         5
+                           ""Return::promotion::price match""       0.00      0.00      0.00         4
+                                 ""Rewards::Combine account""       0.00      0.00      0.00         2
+                                           ""Rewards::Other""       0.56      0.36      0.43        14
+                   ""Rewards::Stacking with Other Discounts""       0.00      0.00      0.00         3
+                                    ""Rewards::Void Voucher""       0.74      0.89      0.81        19
+                                     ""Rewards::tier status""       0.00      0.00      0.00         2
+                                   ""Shipping::Claim::Route""       0.00      0.00      0.00         4
+ ""Shipping::FedEx/USPS/Canada Post::Delivered Not Received""       0.00      0.00      0.00         4
+                              ""Shipping::FedEx/USPS::WISMO""       0.00      0.00      0.00         4
+                                          ""Shipping::Other""       0.00      0.00      0.00         3
+
+                                                   accuracy                           0.58       419
+                                                  macro avg       0.20      0.18      0.17       419
+                                               weighted avg       0.43      0.58      0.47       419
+"
+23353,LogisticRegression,0.6404833836858006,0.48297633480121305,0.6456604910439177,0.6692168710384456,0.6404833836858006,"                                                               precision    recall  f1-score   support
+
+          ""Account Inquiry::Unsubscribe me from email alerts""       0.86      1.00      0.92         6
+                      ""Order Inquiry::Address change request""       0.60      0.75      0.67         4
+                         ""Order Inquiry::Cancelation request""       0.82      0.75      0.78        12
+                    ""Order Inquiry::Line item change request""       0.75      1.00      0.86         3
+                 ""Order Inquiry::Request to add gift message""       0.33      0.50      0.40         2
+                                                      ""Other""       0.18      0.23      0.20        13
+                      ""Product::Product issue::Damage/Defect""       0.80      0.78      0.79        46
+                                    ""Product::Sizing inquiry""       1.00      0.33      0.50         3
+                           ""Return&Exchange::Exchange policy""       0.12      0.25      0.17         4
+                              ""Return&Exchange::Gift Returns""       0.71      0.62      0.67         8
+                   ""Return&Exchange::How to return/exchange?""       0.37      0.45      0.41        29
+                  ""Return&Exchange::Not eligible::Final Sale""       0.14      0.17      0.15         6
+       ""Return&Exchange::Not eligible::Outside return window""       0.00      0.00      0.00         3
+                             ""Return&Exchange::Return policy""       0.27      0.27      0.27        11
+                             ""Return&Exchange::Return status""       0.83      0.42      0.56        12
+                                                       ""Spam""       0.92      0.88      0.90        92
+   ""WISMO::Post-shipped::Delayed shipping - order in transit""       0.50      0.40      0.44         5
+                 ""WISMO::Post-shipped::Delivered but missing""       0.67      0.67      0.67        21
+               ""WISMO::Post-shipped::Missing Item from order""       1.00      0.40      0.57         5
+                  ""WISMO::Post-shipped::Order Returned - RTS""       0.50      0.25      0.33         4
+                   ""WISMO::Post-shipped::Received wrong item""       0.40      0.67      0.50         6
+               ""WISMO::Post-shipped::Tracking hasn't updated""       0.25      0.43      0.32         7
+""WISMO::Pre-shipped::I did not receive my confirmation email""       0.00      0.00      0.00         2
+                               ""WISMO::Pre-shipped::Oversold""       0.71      0.67      0.69        15
+                       ""Web Assistance::Product Availability""       0.57      0.57      0.57         7
+                      ""Web Assistance::Promo codes/Discounts""       0.25      0.20      0.22         5
+
+                                                     accuracy                           0.64       331
+                                                    macro avg       0.52      0.49      0.48       331
+                                                 weighted avg       0.67      0.64      0.65       331
+"
+23353,SVC,0.27794561933534745,0.01673031460265503,0.12090305900166415,0.07725376730770987,0.27794561933534745,"                                                               precision    recall  f1-score   support
+
+          ""Account Inquiry::Unsubscribe me from email alerts""       0.00      0.00      0.00         6
+                      ""Order Inquiry::Address change request""       0.00      0.00      0.00         4
+                         ""Order Inquiry::Cancelation request""       0.00      0.00      0.00        12
+                    ""Order Inquiry::Line item change request""       0.00      0.00      0.00         3
+                 ""Order Inquiry::Request to add gift message""       0.00      0.00      0.00         2
+                                                      ""Other""       0.00      0.00      0.00        13
+                      ""Product::Product issue::Damage/Defect""       0.00      0.00      0.00        46
+                                    ""Product::Sizing inquiry""       0.00      0.00      0.00         3
+                           ""Return&Exchange::Exchange policy""       0.00      0.00      0.00         4
+                              ""Return&Exchange::Gift Returns""       0.00      0.00      0.00         8
+                   ""Return&Exchange::How to return/exchange?""       0.00      0.00      0.00        29
+                  ""Return&Exchange::Not eligible::Final Sale""       0.00      0.00      0.00         6
+       ""Return&Exchange::Not eligible::Outside return window""       0.00      0.00      0.00         3
+                             ""Return&Exchange::Return policy""       0.00      0.00      0.00        11
+                             ""Return&Exchange::Return status""       0.00      0.00      0.00        12
+                                                       ""Spam""       0.28      1.00      0.43        92
+   ""WISMO::Post-shipped::Delayed shipping - order in transit""       0.00      0.00      0.00         5
+                 ""WISMO::Post-shipped::Delivered but missing""       0.00      0.00      0.00        21
+               ""WISMO::Post-shipped::Missing Item from order""       0.00      0.00      0.00         5
+                  ""WISMO::Post-shipped::Order Returned - RTS""       0.00      0.00      0.00         4
+                   ""WISMO::Post-shipped::Received wrong item""       0.00      0.00      0.00         6
+               ""WISMO::Post-shipped::Tracking hasn't updated""       0.00      0.00      0.00         7
+""WISMO::Pre-shipped::I did not receive my confirmation email""       0.00      0.00      0.00         2
+                               ""WISMO::Pre-shipped::Oversold""       0.00      0.00      0.00        15
+                       ""Web Assistance::Product Availability""       0.00      0.00      0.00         7
+                      ""Web Assistance::Promo codes/Discounts""       0.00      0.00      0.00         5
+
+                                                     accuracy                           0.28       331
+                                                    macro avg       0.01      0.04      0.02       331
+                                                 weighted avg       0.08      0.28      0.12       331
+"
+62537,LogisticRegression,0.5033333333333333,0.16987108462389552,0.405517284991213,0.38809380896880896,0.5033333333333333,"                                                                         precision    recall  f1-score   support
+
+                              ""Order Support::Cancel::No longer needed""       0.90      0.89      0.90        53
+                ""Order Support::Delivery Issue::Damaged items received""       0.67      0.31      0.42        13
+                      ""Order Support::Delivery Issue::Delivery Delayed""       0.00      0.00      0.00         7
+                 ""Order Support::Delivery Issue::Order Lost in transit""       0.00      0.00      0.00         5
+              ""Order Support::Delivery Issue::Order returned to sender""       0.00      0.00      0.00         6
+              ""Order Support::Delivery Issue::Shipment missing an item""       0.00      0.00      0.00         8
+            ""Order Support::Delivery Status::Awaiting test kit results""       0.69      0.65      0.67        17
+                   ""Order Support::Delivery Status::Where is my order?""       0.43      0.73      0.54        26
+                            ""Order Support::Edit Order::Change Address""       0.00      0.00      0.00         3
+         ""Order Support::Order Status::General inquiry on order status""       0.14      0.03      0.05        36
+""Order Support::Order Status::Query on product application after order""       0.20      0.06      0.09        17
+                     ""Sales Support::Collaborations::Partnership query""       0.00      0.00      0.00         6
+                       ""Sales Support::Miscellaneous::Logging in issue""       0.00      0.00      0.00         7
+                ""Sales Support::Product Tech info::Product Application""       0.00      0.00      0.00         9
+            ""Sales Support::Product info::General Product Info/Inquiry""       0.40      0.96      0.56        71
+                            ""Sales Support::Product info::Plan details""       0.00      0.00      0.00         8
+                     ""Sales Support::Product info::Product Effectivity""       0.00      0.00      0.00         3
+                        ""Sales Support::Product info::STK result query""       0.00      0.00      0.00         2
+    ""Sales Support::Social Comment Info Only::Social Comment Info Only""       0.00      0.00      0.00         3
+
+                                                               accuracy                           0.50       300
+                                                              macro avg       0.18      0.19      0.17       300
+                                                           weighted avg       0.39      0.50      0.41       300
+"
+62537,SVC,0.5066666666666667,0.33282374052303576,0.5061853386500197,0.5102510437626929,0.5066666666666667,"                                                                         precision    recall  f1-score   support
+
+                              ""Order Support::Cancel::No longer needed""       0.92      0.91      0.91        53
+                ""Order Support::Delivery Issue::Damaged items received""       0.58      0.54      0.56        13
+                      ""Order Support::Delivery Issue::Delivery Delayed""       0.00      0.00      0.00         7
+                 ""Order Support::Delivery Issue::Order Lost in transit""       0.00      0.00      0.00         5
+              ""Order Support::Delivery Issue::Order returned to sender""       0.25      0.50      0.33         6
+              ""Order Support::Delivery Issue::Shipment missing an item""       0.17      0.12      0.14         8
+            ""Order Support::Delivery Status::Awaiting test kit results""       0.71      0.59      0.65        17
+                   ""Order Support::Delivery Status::Where is my order?""       0.47      0.54      0.50        26
+                            ""Order Support::Edit Order::Change Address""       1.00      1.00      1.00         3
+         ""Order Support::Order Status::General inquiry on order status""       0.24      0.28      0.26        36
+""Order Support::Order Status::Query on product application after order""       0.41      0.41      0.41        17
+                     ""Sales Support::Collaborations::Partnership query""       0.43      0.50      0.46         6
+                       ""Sales Support::Miscellaneous::Logging in issue""       0.30      0.43      0.35         7
+                ""Sales Support::Product Tech info::Product Application""       0.17      0.11      0.13         9
+            ""Sales Support::Product info::General Product Info/Inquiry""       0.63      0.59      0.61        71
+                            ""Sales Support::Product info::Plan details""       0.00      0.00      0.00         8
+                     ""Sales Support::Product info::Product Effectivity""       0.00      0.00      0.00         3
+                        ""Sales Support::Product info::STK result query""       0.00      0.00      0.00         2
+    ""Sales Support::Social Comment Info Only::Social Comment Info Only""       0.00      0.00      0.00         3
+
+                                                               accuracy                           0.51       300
+                                                              macro avg       0.33      0.34      0.33       300
+                                                           weighted avg       0.51      0.51      0.51       300
+"
+47355,LogisticRegression,0.4693140794223827,0.36972849719821693,0.45590446988913474,0.474283860565449,0.4693140794223827,"                                precision    recall  f1-score   support
+
+               ""B2B::Prospect""       0.89      1.00      0.94         8
+                ""B2B::Support""       0.00      0.00      0.00         2
+            ""Buy::Accessories""       0.33      0.12      0.18         8
+                  ""Buy::Parts""       0.46      0.54      0.50        24
+  ""Exchange/Return::Defective""       1.00      0.33      0.50         3
+          ""Feedback::Positive""       0.00      0.00      0.00         4
+    ""No Action Req::CSAT Resp""       1.00      0.33      0.50         3
+       ""No Action Req::Others""       0.49      0.47      0.48        40
+               ""Order::Change""       1.00      0.20      0.33         5
+                       ""Other""       0.25      0.21      0.23        14
+   ""Pre-sale::Coupon/Discount""       1.00      0.50      0.67         4
+    ""Pre-sale::Place an order""       0.33      0.33      0.33         6
+    ""Pre-sale::Recommendation""       1.00      0.33      0.50         3
+       ""Pre-sale::Sales_Query""       0.62      0.72      0.67        32
+ ""Pre-sale::Website questions""       0.00      0.00      0.00         2
+""Shipping::Damaged in Transit""       1.00      0.50      0.67         2
+             ""Shipping::Delay""       0.00      0.00      0.00         6
+          ""Shipping::Tracking""       0.31      0.45      0.37        11
+             ""Shipping::WISMO""       0.47      0.47      0.47        17
+           ""Tech Supp::Broken""       0.19      0.22      0.20        27
+         ""Tech Supp::Question""       0.00      0.00      0.00         2
+       ""Tech Supp::Tech_Query""       0.54      0.65      0.59        54
+
+                      accuracy                           0.47       277
+                     macro avg       0.49      0.34      0.37       277
+                  weighted avg       0.47      0.47      0.46       277
+"
+47355,SVC,0.19494584837545126,0.014831090359791264,0.06360770883549466,0.03800388379882443,0.19494584837545126,"                                precision    recall  f1-score   support
+
+               ""B2B::Prospect""       0.00      0.00      0.00         8
+                ""B2B::Support""       0.00      0.00      0.00         2
+            ""Buy::Accessories""       0.00      0.00      0.00         8
+                  ""Buy::Parts""       0.00      0.00      0.00        24
+  ""Exchange/Return::Defective""       0.00      0.00      0.00         3
+          ""Feedback::Positive""       0.00      0.00      0.00         4
+    ""No Action Req::CSAT Resp""       0.00      0.00      0.00         3
+       ""No Action Req::Others""       0.00      0.00      0.00        40
+               ""Order::Change""       0.00      0.00      0.00         5
+                       ""Other""       0.00      0.00      0.00        14
+   ""Pre-sale::Coupon/Discount""       0.00      0.00      0.00         4
+    ""Pre-sale::Place an order""       0.00      0.00      0.00         6
+    ""Pre-sale::Recommendation""       0.00      0.00      0.00         3
+       ""Pre-sale::Sales_Query""       0.00      0.00      0.00        32
+ ""Pre-sale::Website questions""       0.00      0.00      0.00         2
+""Shipping::Damaged in Transit""       0.00      0.00      0.00         2
+             ""Shipping::Delay""       0.00      0.00      0.00         6
+          ""Shipping::Tracking""       0.00      0.00      0.00        11
+             ""Shipping::WISMO""       0.00      0.00      0.00        17
+           ""Tech Supp::Broken""       0.00      0.00      0.00        27
+         ""Tech Supp::Question""       0.00      0.00      0.00         2
+       ""Tech Supp::Tech_Query""       0.19      1.00      0.33        54
+
+                      accuracy                           0.19       277
+                     macro avg       0.01      0.05      0.01       277
+                  weighted avg       0.04      0.19      0.06       277
+"
+65210,LogisticRegression,0.8311688311688312,0.792376950780312,0.836456400742115,0.8510710069151628,0.8311688311688312,"                                    precision    recall  f1-score   support
+
+                 ""Misc::JML Email""       1.00      0.75      0.86         4
+                      ""Misc::Spam""       1.00      1.00      1.00        25
+        ""Pre-Sale::Recommendation""       1.00      0.75      0.86         4
+""Store Message::Customer Question""       0.86      0.67      0.75         9
+   ""Store Message::Order Question""       0.55      0.67      0.60         9
+              ""Store Message::QAS""       0.88      0.88      0.88        17
+         ""Store Message::Training""       0.55      0.67      0.60         9
+
+                          accuracy                           0.83        77
+                         macro avg       0.83      0.77      0.79        77
+                      weighted avg       0.85      0.83      0.84        77
+"
+65210,SVC,0.5324675324675324,0.20170940170940171,0.40408480408480413,0.3468894611135991,0.5324675324675324,"                                    precision    recall  f1-score   support
+
+                 ""Misc::JML Email""       0.00      0.00      0.00         4
+                      ""Misc::Spam""       0.83      0.96      0.89        25
+        ""Pre-Sale::Recommendation""       0.00      0.00      0.00         4
+""Store Message::Customer Question""       0.00      0.00      0.00         9
+   ""Store Message::Order Question""       0.00      0.00      0.00         9
+              ""Store Message::QAS""       0.35      1.00      0.52        17
+         ""Store Message::Training""       0.00      0.00      0.00         9
+
+                          accuracy                           0.53        77
+                         macro avg       0.17      0.28      0.20        77
+                      weighted avg       0.35      0.53      0.40        77
+"

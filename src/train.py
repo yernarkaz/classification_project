@@ -1,62 +1,114 @@
 # train.py
 
-import pandas as pd
-import numpy as np
-import pickle
-
 import dvc.api
 import mlflow
 import mlflow.sklearn
+import numpy as np
+import pandas as pd
+import pickle
+import warnings
+
+warnings.filterwarnings("ignore")
+
 from pathlib import Path
-from sklearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
+from skopt.space import Real, Categorical, Integer
+from sklearn.model_selection import RepeatedStratifiedKFold
+from sklearn.pipeline import Pipeline
+from skopt import BayesSearchCV
+from skopt.callbacks import DeadlineStopper, DeltaYStopper
 from tqdm import tqdm
 
 
-def get_model(model_name):
+def get_model(model_name: str) -> (object, dict):
     """
-        Get model object
-        :param model_name: name of the model
-        :return: model object
-        """
+    Get model object
+    :param model_name: name of the model
+    :return: model object and hyperparameter search space
+    """
 
     if model_name == "LogisticRegression":
         from sklearn.linear_model import LogisticRegression
-        return LogisticRegression()
+
+        # define search space for Logistic Regression
+        search_space = {"clf__C": Real(1e-3, 1e3, prior="log-uniform")}
+        return LogisticRegression(), search_space
     elif model_name == "SVC":
         from sklearn.svm import SVC
-        return SVC()
-    elif model_name == "RandomForestClassifier":
-        from sklearn.ensemble import RandomForestClassifier
-        return RandomForestClassifier()
+
+        # define search space for SVM classifier
+        search_space = {
+            "clf__C": Real(1e-3, 1e3, prior="log-uniform"),
+            "clf__gamma": Real(1e-3, 10.0, prior="log-uniform"),
+            "clf__degree": Integer(1, 3),
+            "clf__kernel": Categorical(["linear", "poly", "rbf"]),
+        }
+
+        return SVC(), search_space
     else:
         raise ValueError(f"Model {model_name} not found")
 
 
-def train_model_pipeline(params, model, train_data, tags):
+def tune_model_pipeline(
+    params: dict, model_pipeline: Pipeline, search_space: dict, train: pd.DataFrame
+) -> BayesSearchCV:
+    """
+    Tune the model
+    :param params: params for model tuning
+    :param model_pipeline: ML model pipeline of interest
+    :param search_space: hyperparameter search space
+    :param train: train data
+    :return: search algorithm with optimal score and best params
+    """
+
+    X_train, y_train = (
+        np.array([vec for vec in train.sentence_embeddings.values]),
+        train[params["target_name"]],
+    )
+
+    # define search algorithm
+    cv = RepeatedStratifiedKFold(
+        n_splits=params["tune"]["n_splits"], n_repeats=params["tune"]["n_repeats"]
+    )
+    search_algorithm = BayesSearchCV(
+        model_pipeline,
+        search_space,
+        n_iter=params["tune"]["n_iter"],
+        cv=cv,
+        optimizer_kwargs={"base_estimator": "GP"},
+    )
+
+    overdone_control = DeltaYStopper(delta=params["tune"]["overdone_delta"])
+    time_limit_control = DeadlineStopper(total_time=params["tune"]["time_limit"])
+
+    search_algorithm.fit(
+        X_train, y_train, callback=[overdone_control, time_limit_control]
+    )
+
+    return search_algorithm
+
+
+def train_model_pipeline(
+    params: dict, model_pipeline: Pipeline, train: pd.DataFrame
+) -> Pipeline:
     """
     Train the model
     :param params: params for model training
-    :param model: ML model of interest
+    :param model_pipeline: ML model of interest
     :param train: train data
-    :param tags: tags of interest for model training
     :return: model pipeline
     """
 
-    model_pipeline = Pipeline([
-        ('pca', PCA(n_components=params["pca_n_components"])),
-        ('clf', model)
-    ])
-    
-    for tag in tqdm(tags):
-        train = train_data[tag]
-        X_train, y_train = np.array([vec for vec in train.sentence_embeddings.values]), train[tag]  
-        model_pipeline.fit(X_train, y_train)
+    X_train, y_train = (
+        np.array([vec for vec in train.sentence_embeddings.values]),
+        train[params["target_name"]],
+    )
+    model_pipeline.fit(X_train, y_train)
 
     return model_pipeline
 
 
-def save_model(repo_path, params, model_pipelines):
+def save_model(repo_path: Path, params: dict, model_pipelines: dict) -> None:
     """
     Save the model pipeline
     :param repo_path: path to repo
@@ -65,55 +117,77 @@ def save_model(repo_path, params, model_pipelines):
     :return: None
     """
 
-    pickle.dump(model_pipelines, open(repo_path / f"data/model_pipelines.pkl", "wb"))
+    pickle.dump(model_pipelines, open(repo_path / params["model_data_path"], "wb"))
+    pickle.dump(model_pipelines, open(repo_path / params["model_result_path"], "wb"))
 
 
-def main(repo_path):
+def main(repo_path: Path) -> None:
     """
     Main function
     :param repo_path: path to repo
     :return: None
     """
 
-    print("repo_path:", repo_path)
+    # load params from DVC specific to train and evaluation
     params = dvc.api.params_show(stages=["preprocess", "train"])
-    print("params:")
-    print(params)
 
-    print("Seeding random...")
+    # set random seed
     np.random.seed(params["seed"])
 
-    print("Loading tags...")
-    tags = np.load(repo_path / params["tags_path"])
-
-    print("Loading train data...")
+    # load train data for each merchant
     train_data = {}
-    for tag in tqdm(tags):
-        train_data[tag] = pd.read_parquet(repo_path / params["train_path"] / f"{tag.replace('/', '_')}")
+    for account_id in tqdm(params["account_ids"]):
+        train_data[account_id] = pd.read_parquet(
+            repo_path / f"{params['train_path']}_{account_id}"
+        )
 
-    
+    # get or set experiment if not exists
     experiment = mlflow.set_experiment(params["experiment_name"])
 
-    with mlflow.start_run(experiment_id=experiment.experiment_id, run_name="training"):
-        mlflow.log_param("seed", params["seed"])
-        mlflow.log_param("data_version", params["data_version"])
-        mlflow.log_param("account_ids", params["account_ids"])
-        mlflow.log_param("embedding_pooling_type", params["embedding_pooling_type"])
-        mlflow.log_param("preprocess_type", params["preprocess_type"])
+    # Train model pipelines on the test set for each merchant
+    # Track training specific params for the experiment
+    model_pipelines = {}
 
-        print("Training model pipelines...")
-        model_pipelines = {}
-        for model_name in params["models"]:
+    for account_id, train in tqdm(train_data.items()):
+        with mlflow.start_run(
+            experiment_id=experiment.experiment_id, run_name=f"training_{account_id}"
+        ):
+            mlflow.log_param("seed", params["seed"])
+            mlflow.log_param("data_version", params["data_version"])
+            mlflow.log_param("min_tag_cnt", params["min_tag_cnt"])
+            mlflow.log_param("embedding_pooling_type", params["embedding_pooling_type"])
+            mlflow.log_param("pca_n_components", params["pca_n_components"])
 
-            print("Training model:", model_name)
-            with mlflow.start_run(experiment_id=experiment.experiment_id, run_name=model_name, nested=True):
-                mlflow.log_param("model", model_name)
-                mlflow.log_param("pca_n_components", params["pca_n_components"])
+            model_pipelines[account_id] = {}
 
-                model = get_model(model_name)
-                model_pipelines[model_name] = train_model_pipeline(params, model, train_data, tags)
+            for model_name in params["models"]:
+                with mlflow.start_run(
+                    experiment_id=experiment.experiment_id,
+                    run_name=model_name,
+                    nested=True,
+                ):
+                    model, search_space = get_model(model_name)
+                    # setup a model pipeline
+                    # PCA is used to reduce and alleviate the curse of dimensionality for linear classifiers
+                    model_pipeline = Pipeline(
+                        [
+                            ("pca", PCA(n_components=params["pca_n_components"])),
+                            ("clf", model),
+                        ]
+                    )
+                    # tune model with hyperparameter search space
 
-    print("Saving model pipelines...")
+                    search_algorithm = tune_model_pipeline(
+                        params, model_pipeline, search_space, train
+                    )
+                    mlflow.log_params(search_algorithm.best_params_)
+
+                    # train model with optimal hyperparameters
+                    model_pipelines[account_id][model_name] = train_model_pipeline(
+                        params, search_algorithm.best_estimator_, train
+                    )
+
+    # save model pipeline for each merchant
     save_model(repo_path, params, model_pipelines)
 
 

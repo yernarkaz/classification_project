@@ -5,12 +5,21 @@ stages:
     deps:
     - path: src/preprocess.py
       hash: md5
-      md5: 4d9a1936101bde63c6eb0e731aae251d
-      size: 3157
+      md5: 3aaccc5f6ade28a1d11e821d70906ce2
+      size: 5061
     params:
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         data_columns:
         - account_id
         - contact_reason
@@ -18,78 +27,98 @@ stages:
         data_path: data/classification_dataset
         data_version: v1
         embedding_pooling_type: mean
-        preprocess_type: single
+        min_tag_cnt: 10
         seed: 42
-        target_label: contact_reason
+        target_name: contact_reason
     outs:
-    - path: data/tags.npy
+    - path: data/selected_tags.pkl
       hash: md5
-      md5: b7c65bdf5393e603cf7d54259a1297c5
-      size: 11288
+      md5: a49de203835aa898299f88573e77a04e
+      size: 9567
   train:
     cmd: python3 src/train.py
     deps:
-    - path: data/tags.npy
+    - path: data/selected_tags.pkl
       hash: md5
-      md5: b7c65bdf5393e603cf7d54259a1297c5
-      size: 11288
+      md5: a49de203835aa898299f88573e77a04e
+      size: 9567
     - path: src/train.py
       hash: md5
-      md5: 5179f2639b631d4003308fec4b9f583f
-      size: 3638
+      md5: ab39f846460bb5ffd06b4019249b550e
+      size: 6391
     params:
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         data_version: v1
         embedding_pooling_type: mean
-        preprocess_type: single
+        min_tag_cnt: 10
         seed: 42
-      train.yaml:
+        target_name: contact_reason
+      config/train.yaml:
         experiment_name: classificaton_project
+        model_data_path: data/model_pipelines.pkl
+        model_result_path: results/models/model_pipelines.pkl
         models:
         - LogisticRegression
         - SVC
         pca_n_components: 120
-        tags_path: data/tags.npy
+        tags_path: data/selected_tags.pkl
         train_path: data/train
+        tune:
+          n_splits: 3
+          n_repeats: 3
+          n_iter: 5
+          overdone_delta: 0.01
+          time_limit: 60
     outs:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: cc7f748b51f1601f036a8613d7746933
-      size: 3378209
+      md5: eab575649d5d58e5c4b7a6db5a4d9a82
+      size: 38168519
   evaluate:
     cmd: python3 src/evaluate.py
     deps:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: cc7f748b51f1601f036a8613d7746933
-      size: 3378209
+      md5: eab575649d5d58e5c4b7a6db5a4d9a82
+      size: 38168519
     - path: src/evaluate.py
       hash: md5
-      md5: 3b81edfa0cde073172947875465a09ad
-      size: 4244
+      md5: 45995e92447d5ffe6baa7739e5ada6ce
+      size: 4366
     params:
-      evaluate.yaml:
+      config/evaluate.yaml:
         model_path: data/model_pipelines.pkl
         result_path: data/model_pipeline_performance_results.csv
         result_path_track: results/model_pipeline_performance_results.csv
         test_path: data/test
-      preprocess.yaml:
+      config/preprocess.yaml:
         account_ids:
         - '49143'
-        data_version: v1
-        embedding_pooling_type: mean
-        preprocess_type: single
+        - '23777'
+        - '4453'
+        - '81813'
+        - '89195'
+        - '12167'
+        - '23353'
+        - '62537'
+        - '47355'
+        - '65210'
         seed: 42
-      train.yaml:
+      config/train.yaml:
         experiment_name: classificaton_project
-        models:
-        - LogisticRegression
-        - SVC
-        pca_n_components: 120
     outs:
     - path: data/model_pipeline_performance_results.csv
       hash: md5
-      md5: e51c3f3384691bfb59af72627bf1da23
-      size: 19587
+      md5: 60cb2a4fa50c93020201200364234d16
+      size: 63279

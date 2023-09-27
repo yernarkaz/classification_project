@@ -166,5 +166,5 @@ cython_debug/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# input data
-data/classification_dataset
+# MLFlow local runs
+mlruns/

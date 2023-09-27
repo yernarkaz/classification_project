@@ -1,0 +1,16 @@
+experiment_name: 'classificaton_project' # name of the experiment to keep track in MLFlow UI
+train_path: 'data/train' # path to train data
+tags_path: 'data/selected_tags.pkl' # path to tags
+pca_n_components: 120 # number of components for PCA to reduce the dimensionality of sentence embeddings. 
+                      # recommendations to choose n preserving at least 80% of variance for sentence embeddings.
+models: # Models of interest for training and evaluation.
+  - LogisticRegression
+  - SVC
+tune:
+  n_splits: 3
+  n_repeats: 3
+  n_iter: 5
+  overdone_delta: 0.01
+  time_limit: 60 # 1 min
+model_data_path: data/model_pipelines.pkl # path to model pipelines fo DVC
+model_result_path: results/models/model_pipelines.pkl # path to model pipelines for deployment

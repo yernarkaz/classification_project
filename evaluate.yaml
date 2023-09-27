@@ -1,4 +1,0 @@
-test_path: 'data/test' # path to test data 
-model_path: 'data/model_pipelines.pkl'
-result_path: 'data/model_pipeline_performance_results.csv'
-result_path_track: 'results/model_pipeline_performance_results.csv'
