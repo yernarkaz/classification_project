@@ -5,8 +5,8 @@ stages:
     deps:
     - path: src/preprocess.py
       hash: md5
-      md5: 03d8a24389e04e02031af2ceff48ac4e
-      size: 4319
+      md5: 3aaccc5f6ade28a1d11e821d70906ce2
+      size: 5061
     params:
       config/preprocess.yaml:
         account_ids:
@@ -44,8 +44,8 @@ stages:
       size: 9567
     - path: src/train.py
       hash: md5
-      md5: 482f38d61ffc2a93b827271a26a64e33
-      size: 3508
+      md5: ab39f846460bb5ffd06b4019249b550e
+      size: 6391
     params:
       config/preprocess.yaml:
         account_ids:
@@ -66,28 +66,36 @@ stages:
         target_name: contact_reason
       config/train.yaml:
         experiment_name: classificaton_project
+        model_data_path: data/model_pipelines.pkl
+        model_result_path: results/models/model_pipelines.pkl
         models:
         - LogisticRegression
         - SVC
         pca_n_components: 120
         tags_path: data/selected_tags.pkl
         train_path: data/train
+        tune:
+          n_splits: 3
+          n_repeats: 3
+          n_iter: 5
+          overdone_delta: 0.01
+          time_limit: 60
     outs:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: 5fb994113e4bbc02cf18a435a630f942
-      size: 36952698
+      md5: eab575649d5d58e5c4b7a6db5a4d9a82
+      size: 38168519
   evaluate:
     cmd: python3 src/evaluate.py
     deps:
     - path: data/model_pipelines.pkl
       hash: md5
-      md5: 5fb994113e4bbc02cf18a435a630f942
-      size: 36952698
+      md5: eab575649d5d58e5c4b7a6db5a4d9a82
+      size: 38168519
     - path: src/evaluate.py
       hash: md5
-      md5: c6a7eb87352297f6a9edb4ae88b8c0ad
-      size: 3837
+      md5: 45995e92447d5ffe6baa7739e5ada6ce
+      size: 4366
     params:
       config/evaluate.yaml:
         model_path: data/model_pipelines.pkl
@@ -112,5 +120,5 @@ stages:
     outs:
     - path: data/model_pipeline_performance_results.csv
       hash: md5
-      md5: 14717422c90173e767625f0addca2fd5
-      size: 63176
+      md5: 60cb2a4fa50c93020201200364234d16
+      size: 63279

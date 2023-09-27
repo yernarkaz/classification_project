@@ -35,6 +35,9 @@ stages:
         - tags_path
         - pca_n_components
         - models
+        - tune
+        - model_data_path
+        - model_result_path
     outs:
       - data/model_pipelines.pkl
 

@@ -1,9 +1,8 @@
 # config.yaml
 prod:
   inference:
-    preprocess_params:
+    selected_model:
+      name: 'LogisticRegression'
       embedding_pooling_type: 'mean'
-    selected_model: 'LogisticRegression'
-    model_path: ../data/model_pipelines.pkl
-    tags_path: ../data/tags.npy
-    predictions: results/predictions.csv
+    model_path: ../results/models/model_pipelines.pkl
+    predictions: ../results/predictions.csv

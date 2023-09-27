@@ -1,6 +1,7 @@
-/train
-/test
+/train_*
+/test_*
 /tags.npy
 /model_pipelines.pkl
 /model_pipeline_performance_results.csv
 /selected_tags.pkl
+/classification_dataset

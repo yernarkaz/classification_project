@@ -1,40 +1,40 @@
 account_id,model_name,f1_micro_score,f1_macro_score,f1_weighted_score,precision,recall,classification_report
-49143,LogisticRegression,0.41418764302059496,0.18517304277820437,0.34060124572363804,0.3437899516893075,0.41418764302059496,"                                               precision    recall  f1-score   support
+49143,LogisticRegression,0.3720823798627002,0.09866235048271299,0.2790759404674714,0.28116162224931385,0.3720823798627002,"                                               precision    recall  f1-score   support
 
-                                 ""Auto Reply""       0.33      0.15      0.21        13
-                   ""Cancellation::Full Order""       0.66      0.61      0.63        38
+                                 ""Auto Reply""       0.00      0.00      0.00        13
+                   ""Cancellation::Full Order""       0.69      0.47      0.56        38
                 ""Cancellation::Part Of Order""       0.00      0.00      0.00        19
-                                ""Delay Order""       0.65      0.67      0.66        48
-                                  ""IT Ticket""       1.00      0.60      0.75         5
-                ""No Response Needed (Triage)""       0.36      0.45      0.40        94
-                                ""Order Amend""       0.57      0.12      0.21        32
-             ""Order Confirmation/VAT Receipt""       0.82      0.62      0.71        37
+                                ""Delay Order""       0.67      0.42      0.51        48
+                                  ""IT Ticket""       0.00      0.00      0.00         5
+                ""No Response Needed (Triage)""       0.33      0.37      0.35        94
+                                ""Order Amend""       0.00      0.00      0.00        32
+             ""Order Confirmation/VAT Receipt""       0.75      0.16      0.27        37
                       ""PDF::Damaged::Bedding""       0.00      0.00      0.00        39
-                         ""PDF::Damaged::Evri""       1.00      0.04      0.07        27
+                         ""PDF::Damaged::Evri""       0.00      0.00      0.00        27
                 ""PDF::Damaged::Packer Damage""       0.00      0.00      0.00         5
-                 ""PDF::Failed After Planting""       0.47      0.62      0.54       244
-                        ""PDF::Plant & Advise""       0.33      0.01      0.03        67
-                       ""PDF::Poor On Arrival""       0.40      0.72      0.52       323
-                    ""Payment/Refund Question""       0.49      0.58      0.53        31
+                 ""PDF::Failed After Planting""       0.42      0.59      0.49       244
+                        ""PDF::Plant & Advise""       0.00      0.00      0.00        67
+                       ""PDF::Poor On Arrival""       0.37      0.76      0.50       323
+                    ""Payment/Refund Question""       0.40      0.19      0.26        31
                           ""Positive Feedback""       0.00      0.00      0.00        15
                          ""Pre-Sales Question""       0.00      0.00      0.00        13
-            ""Product Information::Aftersales""       0.33      0.09      0.14        77
-             ""Product Information::Pre-Sales""       0.35      0.35      0.35        26
+            ""Product Information::Aftersales""       0.67      0.03      0.05        77
+             ""Product Information::Pre-Sales""       0.00      0.00      0.00        26
                        ""Question::Aftersales""       0.00      0.00      0.00        32
                         ""Question::Pre-Sales""       0.00      0.00      0.00        22
                  ""Resolved by Phone/WhatsApp""       0.00      0.00      0.00         3
      ""Reviews::Courier Complaint (Delivered)""       0.00      0.00      0.00         2
                   ""Reviews::General Feedback""       0.00      0.00      0.00         8
-                                       ""Spam""       0.64      0.36      0.46        25
-                ""Update Customer Information""       0.71      0.74      0.72        57
-                           ""WISMO::Delivered""       0.26      0.20      0.23       215
+                                       ""Spam""       0.80      0.16      0.27        25
+                ""Update Customer Information""       0.64      0.60      0.62        57
+                           ""WISMO::Delivered""       0.24      0.14      0.18       215
                              ""WISMO::In Pick""       0.00      0.00      0.00        46
-                     ""WISMO::Lost In Transit""       0.23      0.07      0.11        42
-             ""WISMO::Missing (Packing Error)""       0.50      0.05      0.09        20
-                      ""WISMO::Not Despatched""       0.37      0.81      0.51       307
+                     ""WISMO::Lost In Transit""       0.00      0.00      0.00        42
+             ""WISMO::Missing (Packing Error)""       0.00      0.00      0.00        20
+                      ""WISMO::Not Despatched""       0.33      0.88      0.48       307
                           ""WISMO::On the way""       0.00      0.00      0.00       135
                  ""WISMO::Returned By Courier""       0.00      0.00      0.00         5
-               ""Website/Online Account Issue""       0.50      0.27      0.35        11
+               ""Website/Online Account Issue""       0.00      0.00      0.00        11
   ""Wholesale::Order Confirmation/VAT Receipt""       0.00      0.00      0.00         3
       ""Wholesale::PDF::Failed After Planting""       0.00      0.00      0.00        19
              ""Wholesale::PDF::Plant & Advise""       0.00      0.00      0.00         3
@@ -45,97 +45,166 @@ account_id,model_name,f1_micro_score,f1_macro_score,f1_weighted_score,precision,
            ""Wholesale::WISMO::Not Despatched""       0.00      0.00      0.00         6
                ""Wholesale::WISMO::On the way""       0.00      0.00      0.00         4
 ""Wholesale::Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        11
-           ""Wrong Item::Flowered Incorrectly""       0.38      0.26      0.31        19
+           ""Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        19
                   ""Wrong Item::Packing Error""       0.00      0.00      0.00         8
 
-                                     accuracy                           0.41      2185
-                                    macro avg       0.25      0.18      0.19      2185
-                                 weighted avg       0.34      0.41      0.34      2185
+                                     accuracy                           0.37      2185
+                                    macro avg       0.14      0.10      0.10      2185
+                                 weighted avg       0.28      0.37      0.28      2185
 "
-49143,SVC,0.4352402745995423,0.2184295845374953,0.3569250502314344,0.3602431462870821,0.43524027459954234,"                                               precision    recall  f1-score   support
+49143,SVC,0.14782608695652175,0.005599472990777338,0.038076416337285895,0.021852551984877126,0.14782608695652175,"                                               precision    recall  f1-score   support
 
-                                 ""Auto Reply""       0.43      0.23      0.30        13
-                   ""Cancellation::Full Order""       0.65      0.63      0.64        38
-                ""Cancellation::Part Of Order""       1.00      0.05      0.10        19
-                                ""Delay Order""       0.68      0.71      0.69        48
-                                  ""IT Ticket""       1.00      0.80      0.89         5
-                ""No Response Needed (Triage)""       0.36      0.52      0.42        94
-                                ""Order Amend""       0.69      0.28      0.40        32
-             ""Order Confirmation/VAT Receipt""       0.76      0.68      0.71        37
+                                 ""Auto Reply""       0.00      0.00      0.00        13
+                   ""Cancellation::Full Order""       0.00      0.00      0.00        38
+                ""Cancellation::Part Of Order""       0.00      0.00      0.00        19
+                                ""Delay Order""       0.00      0.00      0.00        48
+                                  ""IT Ticket""       0.00      0.00      0.00         5
+                ""No Response Needed (Triage)""       0.00      0.00      0.00        94
+                                ""Order Amend""       0.00      0.00      0.00        32
+             ""Order Confirmation/VAT Receipt""       0.00      0.00      0.00        37
                       ""PDF::Damaged::Bedding""       0.00      0.00      0.00        39
-                         ""PDF::Damaged::Evri""       0.67      0.07      0.13        27
+                         ""PDF::Damaged::Evri""       0.00      0.00      0.00        27
                 ""PDF::Damaged::Packer Damage""       0.00      0.00      0.00         5
-                 ""PDF::Failed After Planting""       0.49      0.62      0.55       244
+                 ""PDF::Failed After Planting""       0.00      0.00      0.00       244
                         ""PDF::Plant & Advise""       0.00      0.00      0.00        67
-                       ""PDF::Poor On Arrival""       0.43      0.76      0.55       323
-                    ""Payment/Refund Question""       0.50      0.61      0.55        31
+                       ""PDF::Poor On Arrival""       0.15      1.00      0.26       323
+                    ""Payment/Refund Question""       0.00      0.00      0.00        31
                           ""Positive Feedback""       0.00      0.00      0.00        15
                          ""Pre-Sales Question""       0.00      0.00      0.00        13
-            ""Product Information::Aftersales""       0.33      0.08      0.13        77
-             ""Product Information::Pre-Sales""       0.30      0.46      0.36        26
+            ""Product Information::Aftersales""       0.00      0.00      0.00        77
+             ""Product Information::Pre-Sales""       0.00      0.00      0.00        26
                        ""Question::Aftersales""       0.00      0.00      0.00        32
-                        ""Question::Pre-Sales""       1.00      0.05      0.09        22
+                        ""Question::Pre-Sales""       0.00      0.00      0.00        22
                  ""Resolved by Phone/WhatsApp""       0.00      0.00      0.00         3
      ""Reviews::Courier Complaint (Delivered)""       0.00      0.00      0.00         2
                   ""Reviews::General Feedback""       0.00      0.00      0.00         8
-                                       ""Spam""       0.78      0.28      0.41        25
-                ""Update Customer Information""       0.85      0.72      0.78        57
-                           ""WISMO::Delivered""       0.29      0.17      0.21       215
+                                       ""Spam""       0.00      0.00      0.00        25
+                ""Update Customer Information""       0.00      0.00      0.00        57
+                           ""WISMO::Delivered""       0.00      0.00      0.00       215
                              ""WISMO::In Pick""       0.00      0.00      0.00        46
                      ""WISMO::Lost In Transit""       0.00      0.00      0.00        42
              ""WISMO::Missing (Packing Error)""       0.00      0.00      0.00        20
-                      ""WISMO::Not Despatched""       0.37      0.86      0.52       307
+                      ""WISMO::Not Despatched""       0.00      0.00      0.00       307
                           ""WISMO::On the way""       0.00      0.00      0.00       135
                  ""WISMO::Returned By Courier""       0.00      0.00      0.00         5
-               ""Website/Online Account Issue""       0.58      0.64      0.61        11
+               ""Website/Online Account Issue""       0.00      0.00      0.00        11
   ""Wholesale::Order Confirmation/VAT Receipt""       0.00      0.00      0.00         3
       ""Wholesale::PDF::Failed After Planting""       0.00      0.00      0.00        19
              ""Wholesale::PDF::Plant & Advise""       0.00      0.00      0.00         3
             ""Wholesale::PDF::Poor On Arrival""       0.00      0.00      0.00        16
               ""Wholesale::Pre-Sales Question""       0.00      0.00      0.00         3
-                           ""Wholesale::Quote""       0.67      0.25      0.36         8
+                           ""Wholesale::Quote""       0.00      0.00      0.00         8
           ""Wholesale::WISMO::Lost In Transit""       0.00      0.00      0.00         2
            ""Wholesale::WISMO::Not Despatched""       0.00      0.00      0.00         6
                ""Wholesale::WISMO::On the way""       0.00      0.00      0.00         4
-""Wholesale::Wrong Item::Flowered Incorrectly""       0.25      0.09      0.13        11
-           ""Wrong Item::Flowered Incorrectly""       0.53      0.47      0.50        19
+""Wholesale::Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        11
+           ""Wrong Item::Flowered Incorrectly""       0.00      0.00      0.00        19
                   ""Wrong Item::Packing Error""       0.00      0.00      0.00         8
 
-                                     accuracy                           0.44      2185
-                                    macro avg       0.30      0.22      0.22      2185
-                                 weighted avg       0.36      0.44      0.36      2185
+                                     accuracy                           0.15      2185
+                                    macro avg       0.00      0.02      0.01      2185
+                                 weighted avg       0.02      0.15      0.04      2185
 "
-23777,LogisticRegression,0.3621973929236499,0.16785223191368917,0.2959994115192562,0.3182334872560923,0.3621973929236499,"                                                     precision    recall  f1-score   support
+23777,LogisticRegression,0.3761638733705773,0.24110002317412743,0.3367085278839774,0.3358814880198556,0.3761638733705773,"                                                     precision    recall  f1-score   support
 
-                                     ""Cancel Order""       0.43      0.35      0.38        26
-                      ""Cancel Request:: Doc Orders""       0.70      0.32      0.44        22
-     ""Cancel Request:: I don't want a subscription""       0.22      0.07      0.11        28
-                       ""Cancel Request:: No reason""       0.34      0.80      0.47        79
-                     ""Cancel Request:: Not working""       0.25      0.11      0.15        27
-                           ""Cancel Request:: Other""       0.23      0.23      0.23        65
-                           ""Cancel Request:: Price""       0.50      0.05      0.09        21
-                 ""Cancel Request:: Purchase at CVS""       0.67      0.40      0.50        10
-                        ""Cancel Request:: Too much""       1.00      0.07      0.14        27
+                                     ""Cancel Order""       0.38      0.35      0.36        26
+                      ""Cancel Request:: Doc Orders""       0.65      0.50      0.56        22
+     ""Cancel Request:: I don't want a subscription""       0.33      0.14      0.20        28
+                       ""Cancel Request:: No reason""       0.40      0.77      0.53        79
+                     ""Cancel Request:: Not working""       0.27      0.15      0.19        27
+                           ""Cancel Request:: Other""       0.26      0.28      0.27        65
+                           ""Cancel Request:: Price""       0.50      0.14      0.22        21
+                 ""Cancel Request:: Purchase at CVS""       0.71      0.50      0.59        10
+                        ""Cancel Request:: Too much""       0.33      0.11      0.17        27
                                          ""Feedback""       0.12      0.16      0.14        32
                             ""Feedback:: Commercial""       0.00      0.00      0.00         2
                                  ""Feedback:: Other""       0.00      0.00      0.00        15
                           ""Feedback:: Subscription""       0.00      0.00      0.00         2
-                                            ""Other""       0.22      0.10      0.13        21
-                         ""Other:: Discount Request""       0.33      0.29      0.31         7
-                                  ""Other:: Dispute""       0.73      0.85      0.79        13
-                                    ""Other:: Other""       1.00      0.09      0.17        11
-                            ""Other:: PayPal Cancel""       0.78      1.00      0.88        29
+                                            ""Other""       0.05      0.05      0.05        21
+                         ""Other:: Discount Request""       0.40      0.29      0.33         7
+                                  ""Other:: Dispute""       0.76      1.00      0.87        13
+                                    ""Other:: Other""       0.25      0.09      0.13        11
+                            ""Other:: PayPal Cancel""       0.88      1.00      0.94        29
+                              ""Other:: Unsubscribe""       0.00      0.00      0.00         4
+                          ""Other:: Urinary history""       0.00      0.00      0.00         5
+                           ""Quality Issue:: Defend""       0.00      0.00      0.00         3
+                          ""Quality Issue:: Promote""       0.50      0.33      0.40         3
+                          ""Questions:: Antibiotics""       0.50      0.33      0.40         6
+                              ""Questions:: For men""       0.50      0.29      0.36         7
+                          ""Questions:: Ingredients""       0.00      0.00      0.00         7
+                                ""Questions:: Order""       0.00      0.00      0.00         9
+                 ""Questions:: Other health related""       0.00      0.00      0.00         6
+                                ""Questions:: Other""       0.00      0.00      0.00        23
+                              ""Questions:: Product""       0.22      0.43      0.29        37
+               ""Questions:: Product:: How it works""       0.00      0.00      0.00         4
+                ""Questions:: Product:: How to take""       0.00      0.00      0.00         5
+                      ""Questions:: Product:: Other""       0.00      0.00      0.00        12
+         ""Questions:: Product:: Whats best for me?""       0.33      0.22      0.27         9
+""Questions:: Product:: Will this work if I have IC""       1.00      0.33      0.50         3
+                       ""Questions:: Shipping Times""       0.00      0.00      0.00         5
+                                ""Refund:: Courtesy""       0.00      0.00      0.00         8
+                ""Refund:: Didn't Mean to Subscribe""       0.00      0.00      0.00         3
+                                ""Refund:: Discount""       1.00      0.40      0.57         5
+                       ""Refund:: MBG:: Not working""       0.00      0.00      0.00         7
+           ""Refund:: MBG:: Side effects/Doc orders""       0.50      0.17      0.25         6
+                 ""Refund:: No longer using/General""       0.00      0.00      0.00         3
+                                   ""Return Request""       0.31      0.36      0.33        22
+                        ""Shipping:: Change Address""       0.48      0.65      0.56        23
+                         ""Shipping:: Delayed Order""       0.00      0.00      0.00         8
+        ""Shipping:: Delivered not received:: Found""       0.00      0.00      0.00         4
+    ""Shipping:: Delivered not received:: Reshipped""       0.43      0.40      0.41        15
+                   ""Shipping:: Fulfillment Mistake""       0.67      0.29      0.40         7
+                              ""Shipping:: Tracking""       0.29      0.38      0.33        26
+                                     ""Side Effects""       0.44      0.35      0.39        20
+                           ""Subscription:: Add OTP""       0.00      0.00      0.00         9
+                       ""Subscription:: Change Date""       0.47      0.66      0.55        67
+                  ""Subscription:: Change Frequency""       0.33      0.12      0.18         8
+        ""Subscription:: Change payment information""       0.61      0.70      0.65        20
+                     ""Subscription:: Process Today""       0.00      0.00      0.00        14
+                         ""Subscription:: Questions""       0.21      0.17      0.19        18
+           ""Subscription:: Reactivate Subscription""       0.20      0.12      0.15         8
+                      ""Subscription:: Swap Product""       0.45      0.71      0.56        77
+       ""Subscription:: Update Personal Information""       0.50      0.52      0.51        27
+                              ""Usage Updates:: Bad""       0.24      0.31      0.27        29
+                             ""Usage Updates:: Good""       0.31      0.52      0.39        31
+                  ""Usage Updates:: Haven't Started""       0.50      0.33      0.40         6
+               ""Usage Updates:: Neutral/Don't Know""       0.17      0.06      0.08        18
+
+                                           accuracy                           0.38      1074
+                                          macro avg       0.28      0.24      0.24      1074
+                                       weighted avg       0.34      0.38      0.34      1074
+"
+23777,SVC,0.07355679702048418,0.0022102229807234985,0.010079769236111447,0.005410602387912709,0.07355679702048418,"                                                     precision    recall  f1-score   support
+
+                                     ""Cancel Order""       0.00      0.00      0.00        26
+                      ""Cancel Request:: Doc Orders""       0.00      0.00      0.00        22
+     ""Cancel Request:: I don't want a subscription""       0.00      0.00      0.00        28
+                       ""Cancel Request:: No reason""       0.07      1.00      0.14        79
+                     ""Cancel Request:: Not working""       0.00      0.00      0.00        27
+                           ""Cancel Request:: Other""       0.00      0.00      0.00        65
+                           ""Cancel Request:: Price""       0.00      0.00      0.00        21
+                 ""Cancel Request:: Purchase at CVS""       0.00      0.00      0.00        10
+                        ""Cancel Request:: Too much""       0.00      0.00      0.00        27
+                                         ""Feedback""       0.00      0.00      0.00        32
+                            ""Feedback:: Commercial""       0.00      0.00      0.00         2
+                                 ""Feedback:: Other""       0.00      0.00      0.00        15
+                          ""Feedback:: Subscription""       0.00      0.00      0.00         2
+                                            ""Other""       0.00      0.00      0.00        21
+                         ""Other:: Discount Request""       0.00      0.00      0.00         7
+                                  ""Other:: Dispute""       0.00      0.00      0.00        13
+                                    ""Other:: Other""       0.00      0.00      0.00        11
+                            ""Other:: PayPal Cancel""       0.00      0.00      0.00        29
                               ""Other:: Unsubscribe""       0.00      0.00      0.00         4
                           ""Other:: Urinary history""       0.00      0.00      0.00         5
                            ""Quality Issue:: Defend""       0.00      0.00      0.00         3
                           ""Quality Issue:: Promote""       0.00      0.00      0.00         3
                           ""Questions:: Antibiotics""       0.00      0.00      0.00         6
-                              ""Questions:: For men""       1.00      0.14      0.25         7
+                              ""Questions:: For men""       0.00      0.00      0.00         7
                           ""Questions:: Ingredients""       0.00      0.00      0.00         7
                                 ""Questions:: Order""       0.00      0.00      0.00         9
                  ""Questions:: Other health related""       0.00      0.00      0.00         6
                                 ""Questions:: Other""       0.00      0.00      0.00        23
-                              ""Questions:: Product""       0.21      0.49      0.30        37
+                              ""Questions:: Product""       0.00      0.00      0.00        37
                ""Questions:: Product:: How it works""       0.00      0.00      0.00         4
                 ""Questions:: Product:: How to take""       0.00      0.00      0.00         5
                       ""Questions:: Product:: Other""       0.00      0.00      0.00        12
@@ -148,572 +217,503 @@ account_id,model_name,f1_micro_score,f1_macro_score,f1_weighted_score,precision,
                        ""Refund:: MBG:: Not working""       0.00      0.00      0.00         7
            ""Refund:: MBG:: Side effects/Doc orders""       0.00      0.00      0.00         6
                  ""Refund:: No longer using/General""       0.00      0.00      0.00         3
-                                   ""Return Request""       0.29      0.45      0.36        22
-                        ""Shipping:: Change Address""       0.50      0.65      0.57        23
+                                   ""Return Request""       0.00      0.00      0.00        22
+                        ""Shipping:: Change Address""       0.00      0.00      0.00        23
                          ""Shipping:: Delayed Order""       0.00      0.00      0.00         8
         ""Shipping:: Delivered not received:: Found""       0.00      0.00      0.00         4
-    ""Shipping:: Delivered not received:: Reshipped""       0.33      0.20      0.25        15
+    ""Shipping:: Delivered not received:: Reshipped""       0.00      0.00      0.00        15
                    ""Shipping:: Fulfillment Mistake""       0.00      0.00      0.00         7
-                              ""Shipping:: Tracking""       0.26      0.38      0.31        26
-                                     ""Side Effects""       0.55      0.30      0.39        20
+                              ""Shipping:: Tracking""       0.00      0.00      0.00        26
+                                     ""Side Effects""       0.00      0.00      0.00        20
                            ""Subscription:: Add OTP""       0.00      0.00      0.00         9
-                       ""Subscription:: Change Date""       0.46      0.72      0.56        67
+                       ""Subscription:: Change Date""       0.00      0.00      0.00        67
                   ""Subscription:: Change Frequency""       0.00      0.00      0.00         8
-        ""Subscription:: Change payment information""       0.58      0.70      0.64        20
+        ""Subscription:: Change payment information""       0.00      0.00      0.00        20
                      ""Subscription:: Process Today""       0.00      0.00      0.00        14
-                         ""Subscription:: Questions""       0.20      0.06      0.09        18
+                         ""Subscription:: Questions""       0.00      0.00      0.00        18
            ""Subscription:: Reactivate Subscription""       0.00      0.00      0.00         8
-                      ""Subscription:: Swap Product""       0.38      0.81      0.52        77
-       ""Subscription:: Update Personal Information""       0.55      0.59      0.57        27
-                              ""Usage Updates:: Bad""       0.23      0.38      0.29        29
-                             ""Usage Updates:: Good""       0.32      0.58      0.41        31
+                      ""Subscription:: Swap Product""       0.00      0.00      0.00        77
+       ""Subscription:: Update Personal Information""       0.00      0.00      0.00        27
+                              ""Usage Updates:: Bad""       0.00      0.00      0.00        29
+                             ""Usage Updates:: Good""       0.00      0.00      0.00        31
                   ""Usage Updates:: Haven't Started""       0.00      0.00      0.00         6
                ""Usage Updates:: Neutral/Don't Know""       0.00      0.00      0.00        18
 
-                                           accuracy                           0.36      1074
-                                          macro avg       0.22      0.18      0.17      1074
-                                       weighted avg       0.32      0.36      0.30      1074
+                                           accuracy                           0.07      1074
+                                          macro avg       0.00      0.02      0.00      1074
+                                       weighted avg       0.01      0.07      0.01      1074
 "
-23777,SVC,0.3789571694599628,0.20512534814948083,0.32219037216264385,0.34963343659773144,0.3789571694599628,"                                                     precision    recall  f1-score   support
-
-                                     ""Cancel Order""       0.48      0.42      0.45        26
-                      ""Cancel Request:: Doc Orders""       0.64      0.32      0.42        22
-     ""Cancel Request:: I don't want a subscription""       0.31      0.14      0.20        28
-                       ""Cancel Request:: No reason""       0.36      0.86      0.51        79
-                     ""Cancel Request:: Not working""       0.27      0.15      0.19        27
-                           ""Cancel Request:: Other""       0.30      0.22      0.25        65
-                           ""Cancel Request:: Price""       0.67      0.10      0.17        21
-                 ""Cancel Request:: Purchase at CVS""       0.83      0.50      0.62        10
-                        ""Cancel Request:: Too much""       0.67      0.15      0.24        27
-                                         ""Feedback""       0.14      0.19      0.16        32
-                            ""Feedback:: Commercial""       0.00      0.00      0.00         2
-                                 ""Feedback:: Other""       0.20      0.07      0.10        15
-                          ""Feedback:: Subscription""       0.00      0.00      0.00         2
-                                            ""Other""       0.15      0.10      0.12        21
-                         ""Other:: Discount Request""       0.50      0.29      0.36         7
-                                  ""Other:: Dispute""       0.81      1.00      0.90        13
-                                    ""Other:: Other""       1.00      0.09      0.17        11
-                            ""Other:: PayPal Cancel""       0.88      1.00      0.94        29
-                              ""Other:: Unsubscribe""       0.00      0.00      0.00         4
-                          ""Other:: Urinary history""       0.00      0.00      0.00         5
-                           ""Quality Issue:: Defend""       0.00      0.00      0.00         3
-                          ""Quality Issue:: Promote""       0.50      0.33      0.40         3
-                          ""Questions:: Antibiotics""       0.00      0.00      0.00         6
-                              ""Questions:: For men""       1.00      0.14      0.25         7
-                          ""Questions:: Ingredients""       1.00      0.14      0.25         7
-                                ""Questions:: Order""       0.00      0.00      0.00         9
-                 ""Questions:: Other health related""       0.00      0.00      0.00         6
-                                ""Questions:: Other""       0.08      0.09      0.08        23
-                              ""Questions:: Product""       0.27      0.59      0.37        37
-               ""Questions:: Product:: How it works""       0.00      0.00      0.00         4
-                ""Questions:: Product:: How to take""       0.00      0.00      0.00         5
-                      ""Questions:: Product:: Other""       0.00      0.00      0.00        12
-         ""Questions:: Product:: Whats best for me?""       0.00      0.00      0.00         9
-""Questions:: Product:: Will this work if I have IC""       0.00      0.00      0.00         3
-                       ""Questions:: Shipping Times""       0.00      0.00      0.00         5
-                                ""Refund:: Courtesy""       0.00      0.00      0.00         8
-                ""Refund:: Didn't Mean to Subscribe""       0.00      0.00      0.00         3
-                                ""Refund:: Discount""       1.00      0.20      0.33         5
-                       ""Refund:: MBG:: Not working""       0.00      0.00      0.00         7
-           ""Refund:: MBG:: Side effects/Doc orders""       0.00      0.00      0.00         6
-                 ""Refund:: No longer using/General""       0.00      0.00      0.00         3
-                                   ""Return Request""       0.33      0.50      0.40        22
-                        ""Shipping:: Change Address""       0.52      0.70      0.59        23
-                         ""Shipping:: Delayed Order""       0.00      0.00      0.00         8
-        ""Shipping:: Delivered not received:: Found""       0.00      0.00      0.00         4
-    ""Shipping:: Delivered not received:: Reshipped""       0.33      0.27      0.30        15
-                   ""Shipping:: Fulfillment Mistake""       0.00      0.00      0.00         7
-                              ""Shipping:: Tracking""       0.29      0.35      0.32        26
-                                     ""Side Effects""       0.36      0.20      0.26        20
-                           ""Subscription:: Add OTP""       0.00      0.00      0.00         9
-                       ""Subscription:: Change Date""       0.46      0.72      0.56        67
-                  ""Subscription:: Change Frequency""       0.00      0.00      0.00         8
-        ""Subscription:: Change payment information""       0.57      0.60      0.59        20
-                     ""Subscription:: Process Today""       0.00      0.00      0.00        14
-                         ""Subscription:: Questions""       0.20      0.06      0.09        18
-           ""Subscription:: Reactivate Subscription""       0.00      0.00      0.00         8
-                      ""Subscription:: Swap Product""       0.41      0.78      0.54        77
-       ""Subscription:: Update Personal Information""       0.52      0.44      0.48        27
-                              ""Usage Updates:: Bad""       0.18      0.31      0.23        29
-                             ""Usage Updates:: Good""       0.31      0.58      0.40        31
-                  ""Usage Updates:: Haven't Started""       1.00      0.33      0.50         6
-               ""Usage Updates:: Neutral/Don't Know""       0.00      0.00      0.00        18
-
-                                           accuracy                           0.38      1074
-                                          macro avg       0.28      0.21      0.21      1074
-                                       weighted avg       0.35      0.38      0.32      1074
-"
-4453,LogisticRegression,0.553639846743295,0.3097108990223303,0.5048986932146879,0.5030172932028234,0.553639846743295,"                                                   precision    recall  f1-score   support
+4453,LogisticRegression,0.2988505747126437,0.060496138948330495,0.201853159712535,0.17094253562977096,0.2988505747126437,"                                                   precision    recall  f1-score   support
 
                                   ""Amazon::Other""       0.00      0.00      0.00        10
                          ""Amazon::Return Request""       0.00      0.00      0.00        16
-       ""External Channel::Amazon::Return Request""       0.39      0.95      0.55        22
-                                          ""Other""       0.59      0.67      0.63        69
-           ""Post-purchase::Change Order::Address""       0.69      0.85      0.76        13
-      ""Post-purchase::Change Order::Cancel Order""       0.78      0.74      0.76        19
-       ""Post-purchase::Change Order::Change Item""       0.74      0.58      0.65        24
-     ""Post-purchase::Change Order::Discount Code""       0.50      0.33      0.40         9
+       ""External Channel::Amazon::Return Request""       0.00      0.00      0.00        22
+                                          ""Other""       0.24      0.86      0.37        69
+           ""Post-purchase::Change Order::Address""       0.00      0.00      0.00        13
+      ""Post-purchase::Change Order::Cancel Order""       0.00      0.00      0.00        19
+       ""Post-purchase::Change Order::Change Item""       0.00      0.00      0.00        24
+     ""Post-purchase::Change Order::Discount Code""       0.00      0.00      0.00         9
                ""Post-purchase::Feedback::Product""       0.00      0.00      0.00         9
-                    ""Post-purchase::Other::Other""       0.34      0.44      0.39        27
-              ""Post-purchase::Other::Sizing Help""       0.44      0.50      0.47        16
-                  ""Post-purchase::Return::Defect""       0.70      0.92      0.80        53
-        ""Post-purchase::Return::Exchange Request""       0.67      0.79      0.73        57
+                    ""Post-purchase::Other::Other""       0.00      0.00      0.00        27
+              ""Post-purchase::Other::Sizing Help""       0.00      0.00      0.00        16
+                  ""Post-purchase::Return::Defect""       0.78      0.66      0.71        53
+        ""Post-purchase::Return::Exchange Request""       0.33      0.61      0.43        57
             ""Post-purchase::Return::Narvar Issue""       0.00      0.00      0.00         2
-                   ""Post-purchase::Return::Other""       1.00      0.08      0.14        13
-          ""Post-purchase::Return::Refund Inquiry""       0.80      0.50      0.62         8
-          ""Post-purchase::Return::Return Request""       0.52      0.64      0.57        58
+                   ""Post-purchase::Return::Other""       0.00      0.00      0.00        13
+          ""Post-purchase::Return::Refund Inquiry""       0.00      0.00      0.00         8
+          ""Post-purchase::Return::Return Request""       0.22      0.47      0.30        58
     ""Post-purchase::Shipping::Late Delivery::DHL""       0.00      0.00      0.00         7
   ""Post-purchase::Shipping::Late Delivery::FedEx""       0.00      0.00      0.00         4
    ""Post-purchase::Shipping::Late Delivery::USPS""       0.00      0.00      0.00         3
-     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.19      0.36      0.24        14
+     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.00      0.00      0.00        14
     ""Post-purchase::Shipping::Lost/Damaged::USPS""       0.00      0.00      0.00         2
  ""Post-purchase::Shipping::Marked Delivered::DHL""       0.00      0.00      0.00         9
-""Post-purchase::Shipping::Marked Delivered::USPS""       0.47      0.69      0.56        13
-                 ""Post-purchase::Shipping::Other""       0.33      0.17      0.22        12
+""Post-purchase::Shipping::Marked Delivered::USPS""       0.00      0.00      0.00        13
+                 ""Post-purchase::Shipping::Other""       0.00      0.00      0.00        12
       ""Post-purchase::Shipping::XB::Missing Item""       0.00      0.00      0.00         4
-                  ""Presale::Issue::Cart/Checkout""       0.50      0.14      0.22         7
+                  ""Presale::Issue::Cart/Checkout""       0.00      0.00      0.00         7
       ""Presale::Policy Inquiry::Discount Request""       0.00      0.00      0.00         3
                 ""Presale::Product Inquiry::Other""       0.00      0.00      0.00         5
-               ""Presale::Product Inquiry::Sizing""       0.70      0.50      0.58        14
+               ""Presale::Product Inquiry::Sizing""       0.00      0.00      0.00        14
 
-                                         accuracy                           0.55       522
-                                        macro avg       0.35      0.33      0.31       522
-                                     weighted avg       0.50      0.55      0.50       522
+                                         accuracy                           0.30       522
+                                        macro avg       0.05      0.09      0.06       522
+                                     weighted avg       0.17      0.30      0.20       522
 "
-4453,SVC,0.5938697318007663,0.36536882392704867,0.5547918692106254,0.5628805755794075,0.5938697318007663,"                                                   precision    recall  f1-score   support
+4453,SVC,0.13218390804597702,0.0077834179357022,0.03086527802088803,0.017472585546307307,0.13218390804597702,"                                                   precision    recall  f1-score   support
 
                                   ""Amazon::Other""       0.00      0.00      0.00        10
                          ""Amazon::Return Request""       0.00      0.00      0.00        16
-       ""External Channel::Amazon::Return Request""       0.39      1.00      0.56        22
-                                          ""Other""       0.68      0.74      0.71        69
-           ""Post-purchase::Change Order::Address""       0.92      0.92      0.92        13
-      ""Post-purchase::Change Order::Cancel Order""       0.94      0.79      0.86        19
-       ""Post-purchase::Change Order::Change Item""       0.73      0.67      0.70        24
-     ""Post-purchase::Change Order::Discount Code""       0.70      0.78      0.74         9
-               ""Post-purchase::Feedback::Product""       0.33      0.11      0.17         9
-                    ""Post-purchase::Other::Other""       0.39      0.52      0.44        27
-              ""Post-purchase::Other::Sizing Help""       0.50      0.62      0.56        16
-                  ""Post-purchase::Return::Defect""       0.76      0.91      0.83        53
-        ""Post-purchase::Return::Exchange Request""       0.68      0.74      0.71        57
+       ""External Channel::Amazon::Return Request""       0.00      0.00      0.00        22
+                                          ""Other""       0.13      1.00      0.23        69
+           ""Post-purchase::Change Order::Address""       0.00      0.00      0.00        13
+      ""Post-purchase::Change Order::Cancel Order""       0.00      0.00      0.00        19
+       ""Post-purchase::Change Order::Change Item""       0.00      0.00      0.00        24
+     ""Post-purchase::Change Order::Discount Code""       0.00      0.00      0.00         9
+               ""Post-purchase::Feedback::Product""       0.00      0.00      0.00         9
+                    ""Post-purchase::Other::Other""       0.00      0.00      0.00        27
+              ""Post-purchase::Other::Sizing Help""       0.00      0.00      0.00        16
+                  ""Post-purchase::Return::Defect""       0.00      0.00      0.00        53
+        ""Post-purchase::Return::Exchange Request""       0.00      0.00      0.00        57
             ""Post-purchase::Return::Narvar Issue""       0.00      0.00      0.00         2
-                   ""Post-purchase::Return::Other""       1.00      0.08      0.14        13
-          ""Post-purchase::Return::Refund Inquiry""       0.75      0.75      0.75         8
-          ""Post-purchase::Return::Return Request""       0.61      0.66      0.63        58
+                   ""Post-purchase::Return::Other""       0.00      0.00      0.00        13
+          ""Post-purchase::Return::Refund Inquiry""       0.00      0.00      0.00         8
+          ""Post-purchase::Return::Return Request""       0.00      0.00      0.00        58
     ""Post-purchase::Shipping::Late Delivery::DHL""       0.00      0.00      0.00         7
   ""Post-purchase::Shipping::Late Delivery::FedEx""       0.00      0.00      0.00         4
    ""Post-purchase::Shipping::Late Delivery::USPS""       0.00      0.00      0.00         3
-     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.18      0.36      0.24        14
+     ""Post-purchase::Shipping::Lost/Damaged::DHL""       0.00      0.00      0.00        14
     ""Post-purchase::Shipping::Lost/Damaged::USPS""       0.00      0.00      0.00         2
- ""Post-purchase::Shipping::Marked Delivered::DHL""       0.50      0.11      0.18         9
-""Post-purchase::Shipping::Marked Delivered::USPS""       0.41      0.69      0.51        13
-                 ""Post-purchase::Shipping::Other""       0.33      0.17      0.22        12
+ ""Post-purchase::Shipping::Marked Delivered::DHL""       0.00      0.00      0.00         9
+""Post-purchase::Shipping::Marked Delivered::USPS""       0.00      0.00      0.00        13
+                 ""Post-purchase::Shipping::Other""       0.00      0.00      0.00        12
       ""Post-purchase::Shipping::XB::Missing Item""       0.00      0.00      0.00         4
-                  ""Presale::Issue::Cart/Checkout""       0.57      0.57      0.57         7
+                  ""Presale::Issue::Cart/Checkout""       0.00      0.00      0.00         7
       ""Presale::Policy Inquiry::Discount Request""       0.00      0.00      0.00         3
                 ""Presale::Product Inquiry::Other""       0.00      0.00      0.00         5
-               ""Presale::Product Inquiry::Sizing""       0.67      0.43      0.52        14
+               ""Presale::Product Inquiry::Sizing""       0.00      0.00      0.00        14
 
-                                         accuracy                           0.59       522
-                                        macro avg       0.40      0.39      0.37       522
-                                     weighted avg       0.56      0.59      0.55       522
+                                         accuracy                           0.13       522
+                                        macro avg       0.00      0.03      0.01       522
+                                     weighted avg       0.02      0.13      0.03       522
 "
-81813,LogisticRegression,0.5219206680584552,0.31037036322942707,0.4537964958769056,0.4334879166079585,0.5219206680584552,"                                            precision    recall  f1-score   support
+81813,LogisticRegression,0.49478079331941544,0.3942780709499896,0.4818534937832506,0.48060213621592934,0.49478079331941544,"                                            precision    recall  f1-score   support
+
+                     ""Amazon Notification""       0.18      0.16      0.17        19
+                           ""Auto Response""       0.33      0.40      0.36        15
+              ""Customer:: Invoice Request""       0.75      0.75      0.75         8
+                ""Customer:: New Wholesale""       1.00      0.75      0.86         8
+                ""Customer::Address Change""       0.75      0.69      0.72        13
+                        ""Customer::Advice""       0.33      0.55      0.41        22
+          ""Customer::Cancellation Request""       0.55      0.67      0.60         9
+                  ""Customer::Changed Mind""       0.29      0.40      0.33         5
+             ""Customer::Friendly Feedback""       0.00      0.00      0.00         4
+           ""Customer::Incorrectly Ordered""       0.38      0.32      0.34        19
+             ""Customer::Negative Feedback""       0.00      0.00      0.00         5
+                ""Customer::Purchase Query""       0.15      0.18      0.16        22
+           ""Customer::Subscription Change""       0.17      0.17      0.17        12
+             ""Customer::Wholesale Enquiry""       0.00      0.00      0.00         3
+             ""Distribution::Picking Error""       0.47      0.39      0.43        23
+               ""Distribution::Stock Issue""       0.00      0.00      0.00         2
+                  ""Feefo::Positive Review""       0.50      0.33      0.40         3
+                            ""Flow Message""       0.96      1.00      0.98        22
+                               ""Junk Mail""       0.15      0.11      0.12        19
+                       ""Non Service Email""       0.30      0.33      0.32         9
+  ""Non Service Email::Amazon Notification""       0.64      0.72      0.68        47
+        ""Non Service Email::Auto Response""       0.26      0.20      0.23        30
+            ""Non Service Email::Junk Mail""       0.68      0.77      0.72        70
+    ""Non Service Email::Non Service Email""       0.00      0.00      0.00         7
+ ""Non Service Email::Payment Notification""       0.67      0.74      0.70        19
+""Non Service Email::Shipping Notification""       0.86      1.00      0.92         6
+                    ""Payment Notification""       0.43      0.30      0.35        10
+               ""Production::Quality Issue""       0.00      0.00      0.00         2
+                   ""Review::Feefo::Update""       0.50      0.75      0.60         4
+           ""Shipping Issue::Address Issue""       0.00      0.00      0.00         2
+                 ""Shipping Issue::Damaged""       1.00      0.67      0.80         3
+           ""Shipping Issue::Delayed Order""       0.50      0.20      0.29         5
+         ""Shipping Issue::Lost In Transit""       0.50      0.25      0.33         8
+            ""Shipping Issue::Not Received""       0.00      0.00      0.00         4
+                  ""System::Account Access""       0.75      0.75      0.75         4
+             ""System::Discount Code Issue""       0.75      0.64      0.69        14
+                  ""System::Recharge Issue""       0.33      0.50      0.40         2
+
+                                  accuracy                           0.49       479
+                                 macro avg       0.41      0.40      0.39       479
+                              weighted avg       0.48      0.49      0.48       479
+"
+81813,SVC,0.14613778705636743,0.006892138039679024,0.03726646664461101,0.021356252805732192,0.14613778705636743,"                                            precision    recall  f1-score   support
 
                      ""Amazon Notification""       0.00      0.00      0.00        19
-                           ""Auto Response""       0.50      0.13      0.21        15
-              ""Customer:: Invoice Request""       0.67      0.75      0.71         8
-                ""Customer:: New Wholesale""       1.00      0.62      0.77         8
-                ""Customer::Address Change""       0.83      0.77      0.80        13
-                        ""Customer::Advice""       0.31      0.50      0.38        22
-          ""Customer::Cancellation Request""       0.50      0.67      0.57         9
+                           ""Auto Response""       0.00      0.00      0.00        15
+              ""Customer:: Invoice Request""       0.00      0.00      0.00         8
+                ""Customer:: New Wholesale""       0.00      0.00      0.00         8
+                ""Customer::Address Change""       0.00      0.00      0.00        13
+                        ""Customer::Advice""       0.00      0.00      0.00        22
+          ""Customer::Cancellation Request""       0.00      0.00      0.00         9
                   ""Customer::Changed Mind""       0.00      0.00      0.00         5
              ""Customer::Friendly Feedback""       0.00      0.00      0.00         4
-           ""Customer::Incorrectly Ordered""       0.45      0.47      0.46        19
+           ""Customer::Incorrectly Ordered""       0.00      0.00      0.00        19
              ""Customer::Negative Feedback""       0.00      0.00      0.00         5
-                ""Customer::Purchase Query""       0.17      0.18      0.18        22
-           ""Customer::Subscription Change""       0.60      0.25      0.35        12
+                ""Customer::Purchase Query""       0.00      0.00      0.00        22
+           ""Customer::Subscription Change""       0.00      0.00      0.00        12
              ""Customer::Wholesale Enquiry""       0.00      0.00      0.00         3
-             ""Distribution::Picking Error""       0.48      0.70      0.57        23
+             ""Distribution::Picking Error""       0.00      0.00      0.00        23
                ""Distribution::Stock Issue""       0.00      0.00      0.00         2
                   ""Feefo::Positive Review""       0.00      0.00      0.00         3
-                            ""Flow Message""       0.95      0.86      0.90        22
+                            ""Flow Message""       0.00      0.00      0.00        22
                                ""Junk Mail""       0.00      0.00      0.00        19
                        ""Non Service Email""       0.00      0.00      0.00         9
-  ""Non Service Email::Amazon Notification""       0.56      0.87      0.68        47
-        ""Non Service Email::Auto Response""       0.35      0.57      0.44        30
-            ""Non Service Email::Junk Mail""       0.55      0.93      0.69        70
+  ""Non Service Email::Amazon Notification""       0.00      0.00      0.00        47
+        ""Non Service Email::Auto Response""       0.00      0.00      0.00        30
+            ""Non Service Email::Junk Mail""       0.15      1.00      0.26        70
     ""Non Service Email::Non Service Email""       0.00      0.00      0.00         7
- ""Non Service Email::Payment Notification""       0.50      0.74      0.60        19
-""Non Service Email::Shipping Notification""       1.00      0.50      0.67         6
-                    ""Payment Notification""       0.25      0.10      0.14        10
+ ""Non Service Email::Payment Notification""       0.00      0.00      0.00        19
+""Non Service Email::Shipping Notification""       0.00      0.00      0.00         6
+                    ""Payment Notification""       0.00      0.00      0.00        10
                ""Production::Quality Issue""       0.00      0.00      0.00         2
-                   ""Review::Feefo::Update""       0.50      0.50      0.50         4
+                   ""Review::Feefo::Update""       0.00      0.00      0.00         4
            ""Shipping Issue::Address Issue""       0.00      0.00      0.00         2
                  ""Shipping Issue::Damaged""       0.00      0.00      0.00         3
            ""Shipping Issue::Delayed Order""       0.00      0.00      0.00         5
-         ""Shipping Issue::Lost In Transit""       0.33      0.12      0.18         8
+         ""Shipping Issue::Lost In Transit""       0.00      0.00      0.00         8
             ""Shipping Issue::Not Received""       0.00      0.00      0.00         4
-                  ""System::Account Access""       1.00      0.75      0.86         4
-             ""System::Discount Code Issue""       0.80      0.86      0.83        14
+                  ""System::Account Access""       0.00      0.00      0.00         4
+             ""System::Discount Code Issue""       0.00      0.00      0.00        14
                   ""System::Recharge Issue""       0.00      0.00      0.00         2
 
-                                  accuracy                           0.52       479
-                                 macro avg       0.33      0.32      0.31       479
-                              weighted avg       0.43      0.52      0.45       479
+                                  accuracy                           0.15       479
+                                 macro avg       0.00      0.03      0.01       479
+                              weighted avg       0.02      0.15      0.04       479
 "
-81813,SVC,0.569937369519833,0.35902756032502603,0.5092969504028487,0.5045946884154899,0.569937369519833,"                                            precision    recall  f1-score   support
+89195,LogisticRegression,0.4344262295081967,0.14796057183280342,0.2812270811480444,0.20879971907819175,0.4344262295081967,"                      precision    recall  f1-score   support
 
-                     ""Amazon Notification""       0.00      0.00      0.00        19
-                           ""Auto Response""       0.67      0.13      0.22        15
-              ""Customer:: Invoice Request""       0.43      0.75      0.55         8
-                ""Customer:: New Wholesale""       1.00      0.62      0.77         8
-                ""Customer::Address Change""       0.85      0.85      0.85        13
-                        ""Customer::Advice""       0.30      0.50      0.37        22
-          ""Customer::Cancellation Request""       0.43      0.67      0.52         9
-                  ""Customer::Changed Mind""       0.00      0.00      0.00         5
-             ""Customer::Friendly Feedback""       0.00      0.00      0.00         4
-           ""Customer::Incorrectly Ordered""       0.42      0.42      0.42        19
-             ""Customer::Negative Feedback""       0.00      0.00      0.00         5
-                ""Customer::Purchase Query""       0.18      0.32      0.23        22
-           ""Customer::Subscription Change""       0.50      0.17      0.25        12
-             ""Customer::Wholesale Enquiry""       0.00      0.00      0.00         3
-             ""Distribution::Picking Error""       0.54      0.65      0.59        23
-               ""Distribution::Stock Issue""       0.00      0.00      0.00         2
-                  ""Feefo::Positive Review""       0.00      0.00      0.00         3
-                            ""Flow Message""       1.00      0.95      0.98        22
-                               ""Junk Mail""       0.00      0.00      0.00        19
-                       ""Non Service Email""       1.00      0.11      0.20         9
-  ""Non Service Email::Amazon Notification""       0.69      0.98      0.81        47
-        ""Non Service Email::Auto Response""       0.50      0.77      0.61        30
-            ""Non Service Email::Junk Mail""       0.66      0.94      0.78        70
-    ""Non Service Email::Non Service Email""       0.00      0.00      0.00         7
- ""Non Service Email::Payment Notification""       0.61      0.74      0.67        19
-""Non Service Email::Shipping Notification""       1.00      1.00      1.00         6
-                    ""Payment Notification""       0.40      0.20      0.27        10
-               ""Production::Quality Issue""       0.00      0.00      0.00         2
-                   ""Review::Feefo::Update""       0.40      0.50      0.44         4
-           ""Shipping Issue::Address Issue""       0.00      0.00      0.00         2
-                 ""Shipping Issue::Damaged""       1.00      0.67      0.80         3
-           ""Shipping Issue::Delayed Order""       0.00      0.00      0.00         5
-         ""Shipping Issue::Lost In Transit""       0.33      0.25      0.29         8
-            ""Shipping Issue::Not Received""       0.00      0.00      0.00         4
-                  ""System::Account Access""       1.00      0.75      0.86         4
-             ""System::Discount Code Issue""       0.80      0.86      0.83        14
-                  ""System::Recharge Issue""       0.00      0.00      0.00         2
-
-                                  accuracy                           0.57       479
-                                 macro avg       0.40      0.37      0.36       479
-                              weighted avg       0.50      0.57      0.51       479
-"
-89195,LogisticRegression,0.6885245901639344,0.5341247823520503,0.6685941755658981,0.6860541024052919,0.6885245901639344,"                      precision    recall  f1-score   support
-
-             ""Order""       0.58      0.61      0.59        93
-        ""Others::NR""       0.67      0.70      0.68        60
-      ""Others::Spam""       0.80      0.77      0.78        26
-          ""Pre-sale""       0.61      0.51      0.56        49
-            ""Return""       0.77      0.80      0.79       117
-""Shipping::Tracking""       1.00      0.05      0.10        19
-   ""Shipping::WISMO""       0.71      0.84      0.77       115
+             ""Order""       0.00      0.00      0.00        93
+        ""Others::NR""       0.00      0.00      0.00        60
+      ""Others::Spam""       0.00      0.00      0.00        26
+          ""Pre-sale""       0.00      0.00      0.00        49
+            ""Return""       0.40      0.93      0.56       117
+""Shipping::Tracking""       0.00      0.00      0.00        19
+   ""Shipping::WISMO""       0.48      0.90      0.63       115
           ""Warranty""       0.00      0.00      0.00         9
 
-            accuracy                           0.69       488
-           macro avg       0.64      0.54      0.53       488
-        weighted avg       0.69      0.69      0.67       488
+            accuracy                           0.43       488
+           macro avg       0.11      0.23      0.15       488
+        weighted avg       0.21      0.43      0.28       488
 "
-89195,SVC,0.6926229508196722,0.548752394011949,0.6745852820326498,0.6959703043207142,0.6926229508196722,"                      precision    recall  f1-score   support
+89195,SVC,0.5163934426229508,0.34186850863988816,0.4454572399782392,0.5159454591009919,0.5163934426229508,"                      precision    recall  f1-score   support
 
-             ""Order""       0.54      0.65      0.59        93
-        ""Others::NR""       0.73      0.73      0.73        60
-      ""Others::Spam""       0.85      0.88      0.87        26
-          ""Pre-sale""       0.62      0.51      0.56        49
-            ""Return""       0.79      0.75      0.77       117
-""Shipping::Tracking""       1.00      0.05      0.10        19
-   ""Shipping::WISMO""       0.70      0.84      0.77       115
+             ""Order""       0.58      0.15      0.24        93
+        ""Others::NR""       0.95      0.33      0.49        60
+      ""Others::Spam""       0.85      0.65      0.74        26
+          ""Pre-sale""       0.00      0.00      0.00        49
+            ""Return""       0.38      0.89      0.54       117
+""Shipping::Tracking""       0.00      0.00      0.00        19
+   ""Shipping::WISMO""       0.64      0.84      0.73       115
           ""Warranty""       0.00      0.00      0.00         9
 
-            accuracy                           0.69       488
-           macro avg       0.66      0.55      0.55       488
-        weighted avg       0.70      0.69      0.67       488
+            accuracy                           0.52       488
+           macro avg       0.43      0.36      0.34       488
+        weighted avg       0.52      0.52      0.45       488
 "
-12167,LogisticRegression,0.6133651551312649,0.21772338309613576,0.5330337869196916,0.4984932685363751,0.6133651551312649,"                                                             precision    recall  f1-score   support
+12167,LogisticRegression,0.36515513126491644,0.03407250785762827,0.21537093601012716,0.1837275094093702,0.36515513126491644,"                                                             precision    recall  f1-score   support
 
                                            ""Damaged::Other""       0.00      0.00      0.00         2
-                                ""Damaged::Outside Warranty""       0.83      0.36      0.50        14
-                                 ""Damaged::Within Warranty""       0.62      0.84      0.71        25
+                                ""Damaged::Outside Warranty""       0.00      0.00      0.00        14
+                                 ""Damaged::Within Warranty""       0.50      0.04      0.07        25
                                 ""Fulfillment::Missing item""       0.00      0.00      0.00         3
-                                       ""Fulfillment::WISMO""       0.60      0.33      0.43         9
+                                       ""Fulfillment::WISMO""       0.00      0.00      0.00         9
                                   ""Fulfillment::Wrong item""       0.00      0.00      0.00         3
                                        ""Gift card::Inquiry""       0.00      0.00      0.00         2
-                                                      ""N/A""       0.63      0.95      0.76       125
-                                            ""Order::cancel""       0.78      0.86      0.82        21
-                           ""Order::edit::address::in-state""       0.57      0.67      0.62         6
-                                        ""Order::edit::item""       0.70      0.75      0.72        28
+                                                      ""N/A""       0.35      1.00      0.52       125
+                                            ""Order::cancel""       0.00      0.00      0.00        21
+                           ""Order::edit::address::in-state""       0.00      0.00      0.00         6
+                                        ""Order::edit::item""       0.00      0.00      0.00        28
    ""Post-Purchase::Discount::Retroactively apply::Same day""       0.00      0.00      0.00         4
-""Post-Purchase::Discount::Retroactively apply::Within week""       0.33      0.43      0.38         7
+""Post-Purchase::Discount::Retroactively apply::Within week""       0.00      0.00      0.00         7
                                     ""Pre-purchase::coupons""       0.00      0.00      0.00         4
                                    ""Pre-purchase::question""       0.00      0.00      0.00         6
                                  ""Product::Quality Concern""       0.00      0.00      0.00         2
                                       ""Return::Gift Return""       0.00      0.00      0.00         5
                               ""Return::Gift Return::No POP""       0.00      0.00      0.00         3
-                                           ""Return::How-to""       0.53      0.79      0.63        47
-                                            ""Return::Other""       0.36      0.14      0.21        28
+                                           ""Return::How-to""       0.44      0.57      0.50        47
+                                            ""Return::Other""       0.00      0.00      0.00        28
                                  ""Return::Policy questions""       0.00      0.00      0.00        11
              ""Return::Status Inquiry::arrived at warehouse""       0.00      0.00      0.00         5
                            ""Return::promotion::price match""       0.00      0.00      0.00         4
                                  ""Rewards::Combine account""       0.00      0.00      0.00         2
-                                           ""Rewards::Other""       0.50      0.29      0.36        14
+                                           ""Rewards::Other""       0.00      0.00      0.00        14
                    ""Rewards::Stacking with Other Discounts""       0.00      0.00      0.00         3
-                                    ""Rewards::Void Voucher""       0.75      0.95      0.84        19
+                                    ""Rewards::Void Voucher""       0.00      0.00      0.00        19
                                      ""Rewards::tier status""       0.00      0.00      0.00         2
                                    ""Shipping::Claim::Route""       0.00      0.00      0.00         4
  ""Shipping::FedEx/USPS/Canada Post::Delivered Not Received""       0.00      0.00      0.00         4
                               ""Shipping::FedEx/USPS::WISMO""       0.00      0.00      0.00         4
                                           ""Shipping::Other""       0.00      0.00      0.00         3
 
-                                                   accuracy                           0.61       419
-                                                  macro avg       0.23      0.23      0.22       419
-                                               weighted avg       0.50      0.61      0.53       419
+                                                   accuracy                           0.37       419
+                                                  macro avg       0.04      0.05      0.03       419
+                                               weighted avg       0.18      0.37      0.22       419
 "
-12167,SVC,0.6324582338902148,0.27812182844021704,0.5557790415348622,0.5482184739199156,0.6324582338902148,"                                                             precision    recall  f1-score   support
+12167,SVC,0.5799522673031027,0.1702959010804971,0.47030243596981863,0.4329633889572891,0.5799522673031027,"                                                             precision    recall  f1-score   support
 
                                            ""Damaged::Other""       0.00      0.00      0.00         2
-                                ""Damaged::Outside Warranty""       0.83      0.36      0.50        14
-                                 ""Damaged::Within Warranty""       0.58      0.88      0.70        25
+                                ""Damaged::Outside Warranty""       0.00      0.00      0.00        14
+                                 ""Damaged::Within Warranty""       0.52      0.88      0.66        25
                                 ""Fulfillment::Missing item""       0.00      0.00      0.00         3
-                                       ""Fulfillment::WISMO""       0.50      0.44      0.47         9
+                                       ""Fulfillment::WISMO""       1.00      0.11      0.20         9
                                   ""Fulfillment::Wrong item""       0.00      0.00      0.00         3
                                        ""Gift card::Inquiry""       0.00      0.00      0.00         2
-                                                      ""N/A""       0.65      0.95      0.77       125
-                                            ""Order::cancel""       0.94      0.76      0.84        21
-                           ""Order::edit::address::in-state""       0.57      0.67      0.62         6
-                                        ""Order::edit::item""       0.72      0.75      0.74        28
+                                                      ""N/A""       0.55      0.99      0.70       125
+                                            ""Order::cancel""       0.89      0.76      0.82        21
+                           ""Order::edit::address::in-state""       1.00      0.33      0.50         6
+                                        ""Order::edit::item""       0.70      0.68      0.69        28
    ""Post-Purchase::Discount::Retroactively apply::Same day""       0.00      0.00      0.00         4
-""Post-Purchase::Discount::Retroactively apply::Within week""       0.23      0.43      0.30         7
-                                    ""Pre-purchase::coupons""       0.33      0.25      0.29         4
+""Post-Purchase::Discount::Retroactively apply::Within week""       0.00      0.00      0.00         7
+                                    ""Pre-purchase::coupons""       0.00      0.00      0.00         4
                                    ""Pre-purchase::question""       0.00      0.00      0.00         6
                                  ""Product::Quality Concern""       0.00      0.00      0.00         2
                                       ""Return::Gift Return""       0.00      0.00      0.00         5
                               ""Return::Gift Return::No POP""       0.00      0.00      0.00         3
-                                           ""Return::How-to""       0.53      0.83      0.64        47
-                                            ""Return::Other""       0.50      0.04      0.07        28
+                                           ""Return::How-to""       0.53      0.79      0.63        47
+                                            ""Return::Other""       0.00      0.00      0.00        28
                                  ""Return::Policy questions""       0.00      0.00      0.00        11
              ""Return::Status Inquiry::arrived at warehouse""       0.00      0.00      0.00         5
                            ""Return::promotion::price match""       0.00      0.00      0.00         4
                                  ""Rewards::Combine account""       0.00      0.00      0.00         2
-                                           ""Rewards::Other""       0.73      0.57      0.64        14
+                                           ""Rewards::Other""       0.56      0.36      0.43        14
                    ""Rewards::Stacking with Other Discounts""       0.00      0.00      0.00         3
-                                    ""Rewards::Void Voucher""       0.86      1.00      0.93        19
-                                     ""Rewards::tier status""       1.00      1.00      1.00         2
-                                   ""Shipping::Claim::Route""       1.00      0.25      0.40         4
+                                    ""Rewards::Void Voucher""       0.74      0.89      0.81        19
+                                     ""Rewards::tier status""       0.00      0.00      0.00         2
+                                   ""Shipping::Claim::Route""       0.00      0.00      0.00         4
  ""Shipping::FedEx/USPS/Canada Post::Delivered Not Received""       0.00      0.00      0.00         4
                               ""Shipping::FedEx/USPS::WISMO""       0.00      0.00      0.00         4
                                           ""Shipping::Other""       0.00      0.00      0.00         3
 
-                                                   accuracy                           0.63       419
-                                                  macro avg       0.31      0.29      0.28       419
-                                               weighted avg       0.55      0.63      0.56       419
+                                                   accuracy                           0.58       419
+                                                  macro avg       0.20      0.18      0.17       419
+                                               weighted avg       0.43      0.58      0.47       419
 "
-23353,LogisticRegression,0.6435045317220544,0.30960482093980457,0.5772700350441886,0.5536227902130247,0.6435045317220544,"                                                               precision    recall  f1-score   support
+23353,LogisticRegression,0.6404833836858006,0.48297633480121305,0.6456604910439177,0.6692168710384456,0.6404833836858006,"                                                               precision    recall  f1-score   support
 
-          ""Account Inquiry::Unsubscribe me from email alerts""       0.83      0.83      0.83         6
-                      ""Order Inquiry::Address change request""       1.00      0.50      0.67         4
-                         ""Order Inquiry::Cancelation request""       0.78      0.58      0.67        12
+          ""Account Inquiry::Unsubscribe me from email alerts""       0.86      1.00      0.92         6
+                      ""Order Inquiry::Address change request""       0.60      0.75      0.67         4
+                         ""Order Inquiry::Cancelation request""       0.82      0.75      0.78        12
+                    ""Order Inquiry::Line item change request""       0.75      1.00      0.86         3
+                 ""Order Inquiry::Request to add gift message""       0.33      0.50      0.40         2
+                                                      ""Other""       0.18      0.23      0.20        13
+                      ""Product::Product issue::Damage/Defect""       0.80      0.78      0.79        46
+                                    ""Product::Sizing inquiry""       1.00      0.33      0.50         3
+                           ""Return&Exchange::Exchange policy""       0.12      0.25      0.17         4
+                              ""Return&Exchange::Gift Returns""       0.71      0.62      0.67         8
+                   ""Return&Exchange::How to return/exchange?""       0.37      0.45      0.41        29
+                  ""Return&Exchange::Not eligible::Final Sale""       0.14      0.17      0.15         6
+       ""Return&Exchange::Not eligible::Outside return window""       0.00      0.00      0.00         3
+                             ""Return&Exchange::Return policy""       0.27      0.27      0.27        11
+                             ""Return&Exchange::Return status""       0.83      0.42      0.56        12
+                                                       ""Spam""       0.92      0.88      0.90        92
+   ""WISMO::Post-shipped::Delayed shipping - order in transit""       0.50      0.40      0.44         5
+                 ""WISMO::Post-shipped::Delivered but missing""       0.67      0.67      0.67        21
+               ""WISMO::Post-shipped::Missing Item from order""       1.00      0.40      0.57         5
+                  ""WISMO::Post-shipped::Order Returned - RTS""       0.50      0.25      0.33         4
+                   ""WISMO::Post-shipped::Received wrong item""       0.40      0.67      0.50         6
+               ""WISMO::Post-shipped::Tracking hasn't updated""       0.25      0.43      0.32         7
+""WISMO::Pre-shipped::I did not receive my confirmation email""       0.00      0.00      0.00         2
+                               ""WISMO::Pre-shipped::Oversold""       0.71      0.67      0.69        15
+                       ""Web Assistance::Product Availability""       0.57      0.57      0.57         7
+                      ""Web Assistance::Promo codes/Discounts""       0.25      0.20      0.22         5
+
+                                                     accuracy                           0.64       331
+                                                    macro avg       0.52      0.49      0.48       331
+                                                 weighted avg       0.67      0.64      0.65       331
+"
+23353,SVC,0.27794561933534745,0.01673031460265503,0.12090305900166415,0.07725376730770987,0.27794561933534745,"                                                               precision    recall  f1-score   support
+
+          ""Account Inquiry::Unsubscribe me from email alerts""       0.00      0.00      0.00         6
+                      ""Order Inquiry::Address change request""       0.00      0.00      0.00         4
+                         ""Order Inquiry::Cancelation request""       0.00      0.00      0.00        12
                     ""Order Inquiry::Line item change request""       0.00      0.00      0.00         3
                  ""Order Inquiry::Request to add gift message""       0.00      0.00      0.00         2
-                                                      ""Other""       0.25      0.08      0.12        13
-                      ""Product::Product issue::Damage/Defect""       0.75      0.96      0.84        46
+                                                      ""Other""       0.00      0.00      0.00        13
+                      ""Product::Product issue::Damage/Defect""       0.00      0.00      0.00        46
                                     ""Product::Sizing inquiry""       0.00      0.00      0.00         3
                            ""Return&Exchange::Exchange policy""       0.00      0.00      0.00         4
-                              ""Return&Exchange::Gift Returns""       0.60      0.38      0.46         8
-                   ""Return&Exchange::How to return/exchange?""       0.35      0.66      0.45        29
+                              ""Return&Exchange::Gift Returns""       0.00      0.00      0.00         8
+                   ""Return&Exchange::How to return/exchange?""       0.00      0.00      0.00        29
                   ""Return&Exchange::Not eligible::Final Sale""       0.00      0.00      0.00         6
        ""Return&Exchange::Not eligible::Outside return window""       0.00      0.00      0.00         3
                              ""Return&Exchange::Return policy""       0.00      0.00      0.00        11
-                             ""Return&Exchange::Return status""       0.73      0.67      0.70        12
-                                                       ""Spam""       0.78      0.99      0.87        92
+                             ""Return&Exchange::Return status""       0.00      0.00      0.00        12
+                                                       ""Spam""       0.28      1.00      0.43        92
    ""WISMO::Post-shipped::Delayed shipping - order in transit""       0.00      0.00      0.00         5
-                 ""WISMO::Post-shipped::Delivered but missing""       0.50      0.86      0.63        21
-               ""WISMO::Post-shipped::Missing Item from order""       1.00      0.20      0.33         5
+                 ""WISMO::Post-shipped::Delivered but missing""       0.00      0.00      0.00        21
+               ""WISMO::Post-shipped::Missing Item from order""       0.00      0.00      0.00         5
                   ""WISMO::Post-shipped::Order Returned - RTS""       0.00      0.00      0.00         4
                    ""WISMO::Post-shipped::Received wrong item""       0.00      0.00      0.00         6
                ""WISMO::Post-shipped::Tracking hasn't updated""       0.00      0.00      0.00         7
 ""WISMO::Pre-shipped::I did not receive my confirmation email""       0.00      0.00      0.00         2
-                               ""WISMO::Pre-shipped::Oversold""       0.64      0.60      0.62        15
-                       ""Web Assistance::Product Availability""       0.57      0.57      0.57         7
-                      ""Web Assistance::Promo codes/Discounts""       0.50      0.20      0.29         5
+                               ""WISMO::Pre-shipped::Oversold""       0.00      0.00      0.00        15
+                       ""Web Assistance::Product Availability""       0.00      0.00      0.00         7
+                      ""Web Assistance::Promo codes/Discounts""       0.00      0.00      0.00         5
 
-                                                     accuracy                           0.64       331
-                                                    macro avg       0.36      0.31      0.31       331
-                                                 weighted avg       0.55      0.64      0.58       331
+                                                     accuracy                           0.28       331
+                                                    macro avg       0.01      0.04      0.02       331
+                                                 weighted avg       0.08      0.28      0.12       331
 "
-23353,SVC,0.6586102719033232,0.36543081918081916,0.6139530610376532,0.6029787749217199,0.6586102719033232,"                                                               precision    recall  f1-score   support
+62537,LogisticRegression,0.5033333333333333,0.16987108462389552,0.405517284991213,0.38809380896880896,0.5033333333333333,"                                                                         precision    recall  f1-score   support
 
-          ""Account Inquiry::Unsubscribe me from email alerts""       0.75      1.00      0.86         6
-                      ""Order Inquiry::Address change request""       0.60      0.75      0.67         4
-                         ""Order Inquiry::Cancelation request""       0.78      0.58      0.67        12
-                    ""Order Inquiry::Line item change request""       0.00      0.00      0.00         3
-                 ""Order Inquiry::Request to add gift message""       0.25      0.50      0.33         2
-                                                      ""Other""       0.00      0.00      0.00        13
-                      ""Product::Product issue::Damage/Defect""       0.78      0.91      0.84        46
-                                    ""Product::Sizing inquiry""       0.00      0.00      0.00         3
-                           ""Return&Exchange::Exchange policy""       0.00      0.00      0.00         4
-                              ""Return&Exchange::Gift Returns""       0.83      0.62      0.71         8
-                   ""Return&Exchange::How to return/exchange?""       0.33      0.69      0.44        29
-                  ""Return&Exchange::Not eligible::Final Sale""       0.00      0.00      0.00         6
-       ""Return&Exchange::Not eligible::Outside return window""       0.00      0.00      0.00         3
-                             ""Return&Exchange::Return policy""       0.00      0.00      0.00        11
-                             ""Return&Exchange::Return status""       0.80      0.67      0.73        12
-                                                       ""Spam""       0.90      0.98      0.94        92
-   ""WISMO::Post-shipped::Delayed shipping - order in transit""       1.00      0.20      0.33         5
-                 ""WISMO::Post-shipped::Delivered but missing""       0.56      0.71      0.63        21
-               ""WISMO::Post-shipped::Missing Item from order""       1.00      0.40      0.57         5
-                  ""WISMO::Post-shipped::Order Returned - RTS""       0.00      0.00      0.00         4
-                   ""WISMO::Post-shipped::Received wrong item""       0.25      0.17      0.20         6
-               ""WISMO::Post-shipped::Tracking hasn't updated""       0.33      0.14      0.20         7
-""WISMO::Pre-shipped::I did not receive my confirmation email""       0.00      0.00      0.00         2
-                               ""WISMO::Pre-shipped::Oversold""       0.55      0.73      0.63        15
-                       ""Web Assistance::Product Availability""       0.50      0.57      0.53         7
-                      ""Web Assistance::Promo codes/Discounts""       0.25      0.20      0.22         5
-
-                                                     accuracy                           0.66       331
-                                                    macro avg       0.40      0.38      0.37       331
-                                                 weighted avg       0.60      0.66      0.61       331
-"
-62537,LogisticRegression,0.53,0.23496325316001987,0.4584655960082905,0.444572940287226,0.53,"                                                                         precision    recall  f1-score   support
-
-                              ""Order Support::Cancel::No longer needed""       0.92      0.85      0.88        53
-                ""Order Support::Delivery Issue::Damaged items received""       0.56      0.38      0.45        13
+                              ""Order Support::Cancel::No longer needed""       0.90      0.89      0.90        53
+                ""Order Support::Delivery Issue::Damaged items received""       0.67      0.31      0.42        13
                       ""Order Support::Delivery Issue::Delivery Delayed""       0.00      0.00      0.00         7
                  ""Order Support::Delivery Issue::Order Lost in transit""       0.00      0.00      0.00         5
               ""Order Support::Delivery Issue::Order returned to sender""       0.00      0.00      0.00         6
               ""Order Support::Delivery Issue::Shipment missing an item""       0.00      0.00      0.00         8
-            ""Order Support::Delivery Status::Awaiting test kit results""       0.79      0.65      0.71        17
-                   ""Order Support::Delivery Status::Where is my order?""       0.42      0.77      0.54        26
-                            ""Order Support::Edit Order::Change Address""       1.00      0.33      0.50         3
-         ""Order Support::Order Status::General inquiry on order status""       0.22      0.11      0.15        36
-""Order Support::Order Status::Query on product application after order""       0.43      0.35      0.39        17
-                     ""Sales Support::Collaborations::Partnership query""       0.33      0.17      0.22         6
+            ""Order Support::Delivery Status::Awaiting test kit results""       0.69      0.65      0.67        17
+                   ""Order Support::Delivery Status::Where is my order?""       0.43      0.73      0.54        26
+                            ""Order Support::Edit Order::Change Address""       0.00      0.00      0.00         3
+         ""Order Support::Order Status::General inquiry on order status""       0.14      0.03      0.05        36
+""Order Support::Order Status::Query on product application after order""       0.20      0.06      0.09        17
+                     ""Sales Support::Collaborations::Partnership query""       0.00      0.00      0.00         6
                        ""Sales Support::Miscellaneous::Logging in issue""       0.00      0.00      0.00         7
                 ""Sales Support::Product Tech info::Product Application""       0.00      0.00      0.00         9
-            ""Sales Support::Product info::General Product Info/Inquiry""       0.46      0.93      0.62        71
+            ""Sales Support::Product info::General Product Info/Inquiry""       0.40      0.96      0.56        71
                             ""Sales Support::Product info::Plan details""       0.00      0.00      0.00         8
                      ""Sales Support::Product info::Product Effectivity""       0.00      0.00      0.00         3
                         ""Sales Support::Product info::STK result query""       0.00      0.00      0.00         2
     ""Sales Support::Social Comment Info Only::Social Comment Info Only""       0.00      0.00      0.00         3
 
-                                                               accuracy                           0.53       300
-                                                              macro avg       0.27      0.24      0.23       300
-                                                           weighted avg       0.44      0.53      0.46       300
+                                                               accuracy                           0.50       300
+                                                              macro avg       0.18      0.19      0.17       300
+                                                           weighted avg       0.39      0.50      0.41       300
 "
-62537,SVC,0.54,0.28993367967576744,0.471587651611461,0.4720071753609559,0.54,"                                                                         precision    recall  f1-score   support
+62537,SVC,0.5066666666666667,0.33282374052303576,0.5061853386500197,0.5102510437626929,0.5066666666666667,"                                                                         precision    recall  f1-score   support
 
-                              ""Order Support::Cancel::No longer needed""       0.94      0.87      0.90        53
-                ""Order Support::Delivery Issue::Damaged items received""       0.43      0.23      0.30        13
+                              ""Order Support::Cancel::No longer needed""       0.92      0.91      0.91        53
+                ""Order Support::Delivery Issue::Damaged items received""       0.58      0.54      0.56        13
                       ""Order Support::Delivery Issue::Delivery Delayed""       0.00      0.00      0.00         7
                  ""Order Support::Delivery Issue::Order Lost in transit""       0.00      0.00      0.00         5
-              ""Order Support::Delivery Issue::Order returned to sender""       0.50      0.17      0.25         6
-              ""Order Support::Delivery Issue::Shipment missing an item""       0.00      0.00      0.00         8
-            ""Order Support::Delivery Status::Awaiting test kit results""       0.79      0.65      0.71        17
-                   ""Order Support::Delivery Status::Where is my order?""       0.37      0.77      0.50        26
+              ""Order Support::Delivery Issue::Order returned to sender""       0.25      0.50      0.33         6
+              ""Order Support::Delivery Issue::Shipment missing an item""       0.17      0.12      0.14         8
+            ""Order Support::Delivery Status::Awaiting test kit results""       0.71      0.59      0.65        17
+                   ""Order Support::Delivery Status::Where is my order?""       0.47      0.54      0.50        26
                             ""Order Support::Edit Order::Change Address""       1.00      1.00      1.00         3
-         ""Order Support::Order Status::General inquiry on order status""       0.14      0.06      0.08        36
-""Order Support::Order Status::Query on product application after order""       0.38      0.35      0.36        17
-                     ""Sales Support::Collaborations::Partnership query""       0.50      0.50      0.50         6
-                       ""Sales Support::Miscellaneous::Logging in issue""       1.00      0.14      0.25         7
-                ""Sales Support::Product Tech info::Product Application""       0.00      0.00      0.00         9
-            ""Sales Support::Product info::General Product Info/Inquiry""       0.50      0.93      0.65        71
+         ""Order Support::Order Status::General inquiry on order status""       0.24      0.28      0.26        36
+""Order Support::Order Status::Query on product application after order""       0.41      0.41      0.41        17
+                     ""Sales Support::Collaborations::Partnership query""       0.43      0.50      0.46         6
+                       ""Sales Support::Miscellaneous::Logging in issue""       0.30      0.43      0.35         7
+                ""Sales Support::Product Tech info::Product Application""       0.17      0.11      0.13         9
+            ""Sales Support::Product info::General Product Info/Inquiry""       0.63      0.59      0.61        71
                             ""Sales Support::Product info::Plan details""       0.00      0.00      0.00         8
                      ""Sales Support::Product info::Product Effectivity""       0.00      0.00      0.00         3
                         ""Sales Support::Product info::STK result query""       0.00      0.00      0.00         2
     ""Sales Support::Social Comment Info Only::Social Comment Info Only""       0.00      0.00      0.00         3
 
-                                                               accuracy                           0.54       300
-                                                              macro avg       0.34      0.30      0.29       300
-                                                           weighted avg       0.47      0.54      0.47       300
+                                                               accuracy                           0.51       300
+                                                              macro avg       0.33      0.34      0.33       300
+                                                           weighted avg       0.51      0.51      0.51       300
 "
-47355,LogisticRegression,0.4223826714801444,0.1380564181429982,0.33306548211138204,0.3032496371901124,0.4223826714801444,"                                precision    recall  f1-score   support
+47355,LogisticRegression,0.4693140794223827,0.36972849719821693,0.45590446988913474,0.474283860565449,0.4693140794223827,"                                precision    recall  f1-score   support
 
-               ""B2B::Prospect""       1.00      0.25      0.40         8
+               ""B2B::Prospect""       0.89      1.00      0.94         8
+                ""B2B::Support""       0.00      0.00      0.00         2
+            ""Buy::Accessories""       0.33      0.12      0.18         8
+                  ""Buy::Parts""       0.46      0.54      0.50        24
+  ""Exchange/Return::Defective""       1.00      0.33      0.50         3
+          ""Feedback::Positive""       0.00      0.00      0.00         4
+    ""No Action Req::CSAT Resp""       1.00      0.33      0.50         3
+       ""No Action Req::Others""       0.49      0.47      0.48        40
+               ""Order::Change""       1.00      0.20      0.33         5
+                       ""Other""       0.25      0.21      0.23        14
+   ""Pre-sale::Coupon/Discount""       1.00      0.50      0.67         4
+    ""Pre-sale::Place an order""       0.33      0.33      0.33         6
+    ""Pre-sale::Recommendation""       1.00      0.33      0.50         3
+       ""Pre-sale::Sales_Query""       0.62      0.72      0.67        32
+ ""Pre-sale::Website questions""       0.00      0.00      0.00         2
+""Shipping::Damaged in Transit""       1.00      0.50      0.67         2
+             ""Shipping::Delay""       0.00      0.00      0.00         6
+          ""Shipping::Tracking""       0.31      0.45      0.37        11
+             ""Shipping::WISMO""       0.47      0.47      0.47        17
+           ""Tech Supp::Broken""       0.19      0.22      0.20        27
+         ""Tech Supp::Question""       0.00      0.00      0.00         2
+       ""Tech Supp::Tech_Query""       0.54      0.65      0.59        54
+
+                      accuracy                           0.47       277
+                     macro avg       0.49      0.34      0.37       277
+                  weighted avg       0.47      0.47      0.46       277
+"
+47355,SVC,0.19494584837545126,0.014831090359791264,0.06360770883549466,0.03800388379882443,0.19494584837545126,"                                precision    recall  f1-score   support
+
+               ""B2B::Prospect""       0.00      0.00      0.00         8
                 ""B2B::Support""       0.00      0.00      0.00         2
             ""Buy::Accessories""       0.00      0.00      0.00         8
-                  ""Buy::Parts""       0.48      0.50      0.49        24
+                  ""Buy::Parts""       0.00      0.00      0.00        24
   ""Exchange/Return::Defective""       0.00      0.00      0.00         3
           ""Feedback::Positive""       0.00      0.00      0.00         4
     ""No Action Req::CSAT Resp""       0.00      0.00      0.00         3
-       ""No Action Req::Others""       0.41      0.72      0.53        40
+       ""No Action Req::Others""       0.00      0.00      0.00        40
                ""Order::Change""       0.00      0.00      0.00         5
                        ""Other""       0.00      0.00      0.00        14
    ""Pre-sale::Coupon/Discount""       0.00      0.00      0.00         4
     ""Pre-sale::Place an order""       0.00      0.00      0.00         6
     ""Pre-sale::Recommendation""       0.00      0.00      0.00         3
-       ""Pre-sale::Sales_Query""       0.47      0.62      0.53        32
+       ""Pre-sale::Sales_Query""       0.00      0.00      0.00        32
  ""Pre-sale::Website questions""       0.00      0.00      0.00         2
 ""Shipping::Damaged in Transit""       0.00      0.00      0.00         2
              ""Shipping::Delay""       0.00      0.00      0.00         6
           ""Shipping::Tracking""       0.00      0.00      0.00        11
-             ""Shipping::WISMO""       0.45      0.53      0.49        17
-           ""Tech Supp::Broken""       0.12      0.04      0.06        27
+             ""Shipping::WISMO""       0.00      0.00      0.00        17
+           ""Tech Supp::Broken""       0.00      0.00      0.00        27
          ""Tech Supp::Question""       0.00      0.00      0.00         2
-       ""Tech Supp::Tech_Query""       0.41      0.81      0.54        54
+       ""Tech Supp::Tech_Query""       0.19      1.00      0.33        54
 
-                      accuracy                           0.42       277
-                     macro avg       0.15      0.16      0.14       277
-                  weighted avg       0.30      0.42      0.33       277
+                      accuracy                           0.19       277
+                     macro avg       0.01      0.05      0.01       277
+                  weighted avg       0.04      0.19      0.06       277
 "
-47355,SVC,0.4729241877256318,0.19368565217690392,0.38832410313173243,0.370502848045292,0.4729241877256318,"                                precision    recall  f1-score   support
+65210,LogisticRegression,0.8311688311688312,0.792376950780312,0.836456400742115,0.8510710069151628,0.8311688311688312,"                                    precision    recall  f1-score   support
 
-               ""B2B::Prospect""       0.83      0.62      0.71         8
-                ""B2B::Support""       0.00      0.00      0.00         2
-            ""Buy::Accessories""       0.00      0.00      0.00         8
-                  ""Buy::Parts""       0.47      0.58      0.52        24
-  ""Exchange/Return::Defective""       0.00      0.00      0.00         3
-          ""Feedback::Positive""       0.00      0.00      0.00         4
-    ""No Action Req::CSAT Resp""       1.00      0.33      0.50         3
-       ""No Action Req::Others""       0.49      0.78      0.60        40
-               ""Order::Change""       0.00      0.00      0.00         5
-                       ""Other""       0.33      0.07      0.12        14
-   ""Pre-sale::Coupon/Discount""       0.00      0.00      0.00         4
-    ""Pre-sale::Place an order""       0.00      0.00      0.00         6
-    ""Pre-sale::Recommendation""       0.00      0.00      0.00         3
-       ""Pre-sale::Sales_Query""       0.53      0.75      0.62        32
- ""Pre-sale::Website questions""       0.00      0.00      0.00         2
-""Shipping::Damaged in Transit""       0.00      0.00      0.00         2
-             ""Shipping::Delay""       0.00      0.00      0.00         6
-          ""Shipping::Tracking""       0.00      0.00      0.00        11
-             ""Shipping::WISMO""       0.47      0.53      0.50        17
-           ""Tech Supp::Broken""       0.33      0.07      0.12        27
-         ""Tech Supp::Question""       0.00      0.00      0.00         2
-       ""Tech Supp::Tech_Query""       0.43      0.81      0.56        54
-
-                      accuracy                           0.47       277
-                     macro avg       0.22      0.21      0.19       277
-                  weighted avg       0.37      0.47      0.39       277
-"
-65210,LogisticRegression,0.7532467532467532,0.6380468466456349,0.7262739345209542,0.7747252747252747,0.7532467532467533,"                                    precision    recall  f1-score   support
-
-                 ""Misc::JML Email""       1.00      0.25      0.40         4
-                      ""Misc::Spam""       0.96      1.00      0.98        25
+                 ""Misc::JML Email""       1.00      0.75      0.86         4
+                      ""Misc::Spam""       1.00      1.00      1.00        25
         ""Pre-Sale::Recommendation""       1.00      0.75      0.86         4
-""Store Message::Customer Question""       0.67      0.44      0.53         9
-   ""Store Message::Order Question""       0.67      0.22      0.33         9
-              ""Store Message::QAS""       0.65      1.00      0.79        17
-         ""Store Message::Training""       0.50      0.67      0.57         9
-
-                          accuracy                           0.75        77
-                         macro avg       0.78      0.62      0.64        77
-                      weighted avg       0.77      0.75      0.73        77
-"
-65210,SVC,0.8051948051948051,0.7244602872959478,0.7967539084617495,0.8286206218024399,0.8051948051948052,"                                    precision    recall  f1-score   support
-
-                 ""Misc::JML Email""       1.00      0.25      0.40         4
-                      ""Misc::Spam""       0.96      0.92      0.94        25
-        ""Pre-Sale::Recommendation""       1.00      0.75      0.86         4
-""Store Message::Customer Question""       0.70      0.78      0.74         9
-   ""Store Message::Order Question""       0.83      0.56      0.67         9
-              ""Store Message::QAS""       0.77      1.00      0.87        17
+""Store Message::Customer Question""       0.86      0.67      0.75         9
+   ""Store Message::Order Question""       0.55      0.67      0.60         9
+              ""Store Message::QAS""       0.88      0.88      0.88        17
          ""Store Message::Training""       0.55      0.67      0.60         9
 
-                          accuracy                           0.81        77
-                         macro avg       0.83      0.70      0.72        77
-                      weighted avg       0.83      0.81      0.80        77
+                          accuracy                           0.83        77
+                         macro avg       0.83      0.77      0.79        77
+                      weighted avg       0.85      0.83      0.84        77
+"
+65210,SVC,0.5324675324675324,0.20170940170940171,0.40408480408480413,0.3468894611135991,0.5324675324675324,"                                    precision    recall  f1-score   support
+
+                 ""Misc::JML Email""       0.00      0.00      0.00         4
+                      ""Misc::Spam""       0.83      0.96      0.89        25
+        ""Pre-Sale::Recommendation""       0.00      0.00      0.00         4
+""Store Message::Customer Question""       0.00      0.00      0.00         9
+   ""Store Message::Order Question""       0.00      0.00      0.00         9
+              ""Store Message::QAS""       0.35      1.00      0.52        17
+         ""Store Message::Training""       0.00      0.00      0.00         9
+
+                          accuracy                           0.53        77
+                         macro avg       0.17      0.28      0.20        77
+                      weighted avg       0.35      0.53      0.40        77
 "
